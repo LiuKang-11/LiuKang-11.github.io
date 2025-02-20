@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">首頁</a></li>
+        <li><a href="{{ '/about' | relative_url }}">關於我</a></li>
+        <li><a href="{{ '/projects' | relative_url }}">專案</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.title }} {{ site.time | date: '%Y' }}</p>
+  </footer>
+</body>
+</html>

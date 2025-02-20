@@ -1,0 +1,6 @@
+title: "Leslie Liu's Website"
+email: s9172051212@gmail.com
+description: "My site for introduction, resume and projects"
+baseurl: ""  # 若放在根目錄則留空
+url: "https://Liukang-11.github.io"  # 你的 GitHub Pages 網址
+theme: minima  # 可選預設主題，也可自行設計
