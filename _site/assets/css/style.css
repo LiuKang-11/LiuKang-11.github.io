@@ -164,6 +164,10 @@ nav ul li a:hover {
 .timeline-container {
   position: relative;
   padding: 1rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  min-width: 500px; /* 或 600px, 800px，依需求設定 */
 }
 
 .timeline-container::before {
@@ -174,10 +178,6 @@ nav ul li a:hover {
   bottom: 0;
   width: 2px;
   background: #ccc; 
-  /* 關鍵：允許超出寬度時可橫向捲動 */
-  overflow-x: auto;
-  /* iOS 等行動裝置上比較平順的滾動 */
-  -webkit-overflow-scrolling: touch;
 }
 
 /* 單一區塊 */
