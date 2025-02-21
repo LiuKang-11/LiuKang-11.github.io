@@ -16,15 +16,18 @@ header {
 }
 
 header nav ul {
+  display: flex;            /* 讓 ul 成為彈性容器 */
+  justify-content: center;  /* 置中或使用 space-between 等分配空間 */
   list-style: none;
-  text-align: center;
   margin: 0;
   padding: 0;
+  gap: 1em; /* 每個 li 之間留 1em 間距 (可視需求) */
 }
 
 header nav ul li {
   display: inline-block; /* 小螢幕可用媒體查詢改為 block */
-  margin: 0 1em;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li a {
@@ -33,11 +36,18 @@ header nav ul li a {
 }
 
 main {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 0 1em;
-  background: #fff;
+  max-width: 1000px; /* 依需求調整你想要的寬度 */
+  margin: 2em auto;  /* 自動水平置中，上下保留 2em 空間 */
+  background-color: #fff7f7;
+  padding: 2em;      /* 內邊距，讓內容不要貼邊 */
+  box-sizing: border-box;
 }
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
 
 footer {
   text-align: center;
