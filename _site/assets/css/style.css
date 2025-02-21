@@ -278,8 +278,8 @@ nav ul li a:hover {
 @media (max-width: 600px) {
   /* main 區塊調整 */
   main {
-    margin: 1em;
-    padding: 1em;
+    width: 90%;
+    margin: 1rem auto;
   }
 
   /* 導覽列改為直列顯示 */
