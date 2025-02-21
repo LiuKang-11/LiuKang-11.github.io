@@ -6,8 +6,14 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #96b6e8; /* 背景 */
+  background-color: #96b6e8; /* 頁面背景 */
   color: #332b2b;
+  box-sizing: border-box;
+}
+
+/* 讓所有子元素也繼承 box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 header {
@@ -25,7 +31,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block; /* 小螢幕可用媒體查詢改為 block */
+  display: inline-block; /* 小螢幕可在媒體查詢中改為 block */
   margin: 0;
   padding: 0;
 }
@@ -35,20 +41,30 @@ header nav ul li a {
   text-decoration: none;
 }
 
+/* ---------------------
+   <main> 主要內容：固定寬度 + 水平捲軸
+--------------------- */
 main {
-  width: 80%; /* 依需求調整你想要的寬度 */
-  margin: 2rem auto;  /* 自動水平置中，上下保留 2em 空間 */
-  background-color: #fff7f7;
-  padding: 2rem;      /* 內邊距，讓內容不要貼邊 */
+  position: relative;
+  z-index: 1;                  /* 若需要蓋住背後其他區塊，可保留 */
+  width: 800px;                /* 固定寬度，不隨螢幕縮放 */
+  margin: 2rem auto;           /* 水平置中，上下 2rem */
+  overflow-x: auto;            /* 超出寬度時，出現水平捲軸 */
+  background-color: #fff7f7;   /* 白底 */
+  padding: 2rem;
   box-sizing: border-box;
 }
+
+/* 若需要包裹更細部內容，可用 .content-wrapper，但此處可省略 */
 .content-wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em 2em;
 }
 
-
+/* ---------------------
+   footer
+--------------------- */
 footer {
   text-align: center;
   padding: 1em 0;
@@ -86,7 +102,7 @@ a:hover {
    Modal (若有使用)
 --------------------- */
 .modal {
-  display: none; /* 預設隱藏 */
+  display: none;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -164,31 +180,25 @@ nav ul li a:hover {
 /* ---------------------
    Timeline 區塊
 --------------------- */
+/* 讓 #timeline 超過 800px，觸發 <main> 的水平捲軸 */
 #timeline {
-  width: 100%;
+  width: 700px;       /* 比 main(800px) 寬，會觸發水平捲動 */
   margin: 2rem 0;
   padding: 2rem;
   box-sizing: border-box;
-
 }
 
-/* 父容器：垂直線 + 橫向捲動設定 */
+/* 若不需要橫向捲動由 .timeline-container 控制，就移除 overflow-x */
 .timeline-container {
   position: relative;
   padding: 1rem 0;
-
-  /* 關鍵：允許超出螢幕時可橫向捲動 */
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-
-  /* 讓內容寬度超過螢幕時，出現水平捲軸 */
-  min-width: 600px; /* 視需求可調整，例如 700px, 800px */
 }
 
+/* 左側垂直線 */
 .timeline-container::before {
   content: '';
   position: absolute;
-  left: 30px; /* 時間軸距離容器左側的距離 */
+  left: 30px; /* 時間軸距離容器左側 */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -216,9 +226,9 @@ nav ul li a:hover {
 /* 右側內容 */
 .timeline-content {
   background: #f0f0f0;
-  padding: 1rem 3rem 1rem 1rem; /* 右側留3rem給icon */
+  padding: 1rem 3rem 1rem 1rem; /* 右側留3rem給 icon */
   box-sizing: border-box;
-  max-width: 100%; /* 避免內部撐爆 */
+  max-width: 100%; 
 }
 
 .timeline-content .right-icon {
@@ -257,7 +267,7 @@ nav ul li a:hover {
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; /* 區塊間距 */
+  gap: 1rem;
 }
 
 .box {
@@ -276,11 +286,11 @@ nav ul li a:hover {
 --------------------- */
 /* 手機或較小螢幕 (max-width: 600px) */
 @media (max-width: 600px) {
-  /* main 區塊調整 */
-  main {
+  /* 若 main 仍要固定寬度，可保留 800px；若想讓手機也能稍微縮放，可在這裡改動 */
+  /* main {
     width: 90%;
     margin: 1rem auto;
-  }
+  } */
 
   /* 導覽列改為直列顯示 */
   header nav ul li {
@@ -288,7 +298,7 @@ nav ul li a:hover {
     margin: 0.5em 0;
   }
 
-  /* Timeline：縮小左側空間，避免超出螢幕 */
+  /* Timeline：縮小左側空間 */
   .timeline-container::before {
     left: 15px;
   }
@@ -312,7 +322,8 @@ nav ul li a:hover {
 
 /* 中型螢幕 (max-width: 992px) */
 @media (max-width: 992px) {
-  main {
+  /* 如果想在中型螢幕時也讓 main 改用自適應，可在此改動 */
+  /* main {
     max-width: 90%;
-  }
+  } */
 }
