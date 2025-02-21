@@ -174,6 +174,10 @@ nav ul li a:hover {
   bottom: 0;
   width: 2px;
   background: #ccc; 
+  /* 關鍵：允許超出寬度時可橫向捲動 */
+  overflow-x: auto;
+  /* iOS 等行動裝置上比較平順的滾動 */
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 單一區塊 */
