@@ -1,4 +1,4 @@
-I" <h1 id="welcome-to-my-website">Welcome to my website</h1>
+I"!<h1 id="welcome-to-my-website">Welcome to my website</h1>
 <div class="card">
     <div data-aos="zoom-out">
     I'm Leslie Liu, This is my site for introduction, resume and projects demo.
@@ -6,5 +6,5 @@
     </div>
 </div>
 
-<p>＃bundle exec jekyll build</p>
+<p>＃bundle exec jekyll server</p>
 :ET

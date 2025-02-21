@@ -11,4 +11,4 @@ title: "Home Page"
     </div>
 </div>
 
-＃bundle exec jekyll build
+＃bundle exec jekyll server
