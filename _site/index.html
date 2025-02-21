@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+
+  <!-- AOS CSS (選用) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- 自訂 CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
   
 
@@ -23,11 +31,23 @@
     <h1 id="welcome-to-my-website">Welcome to my website</h1>
 
 <p>I’m Leslie Liu, This is my site for introduction, resume and projects demo.</p>
+<div data-aos="fade-up">
+這是一段會有淡入效果的文字。
+</div>
+
+<p>＃bundle exec jekyll build</p>
 
   </main>
 
   <footer>
     <p>© Leslie Liu's Website 2025</p>
   </footer>
+
+  <!-- AOS JS (選用) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

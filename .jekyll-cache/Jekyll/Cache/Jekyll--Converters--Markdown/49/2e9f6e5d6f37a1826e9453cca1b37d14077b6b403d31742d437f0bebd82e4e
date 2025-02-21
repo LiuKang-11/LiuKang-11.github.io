@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-
-  <!-- AOS CSS (選用) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- 自訂 CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-  
-
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1 id="my-projects">My projects</h1>
+I"�<h1 id="my-projects">My projects</h1>
 
 <h2 id="專案一專案名稱">專案一：專案名稱</h2>
 <p>描述：這是一個介紹專案功能與特色的簡述。<br />
@@ -77,18 +47,4 @@
 連結：<a href="https://github.com/username/project2">查看專案</a></p>
 
 <hr />
-
-  </main>
-
-  <footer>
-    <p>© Leslie Liu's Website 2025</p>
-  </footer>
-
-  <!-- AOS JS (選用) -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-</body>
-</html>
+:ET

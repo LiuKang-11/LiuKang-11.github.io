@@ -3,8 +3,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #96b6e8; /* 深色背景 */
+    color: #332b2b;
+
   }
   
   header {
@@ -42,3 +43,99 @@ body {
     background-color: #eee;
   }
   
+  /* 連結與重點色 */
+a {
+  color: #108a6d; /* 綠色強調 */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0b5d4c;
+}
+
+/* 卡片 / 區塊 */
+.card {
+  background-color: #112240;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Modal (若有使用) */
+.modal {
+  display: none; /* 預設隱藏 */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #112240;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.emphasis-btn {
+  /* 基本樣式 */
+  background-color: #7a4a30;  /* 亮綠色背景 */
+  color: #0a192f;            /* 深色文字 */
+  border: none;              /* 無邊框 */
+  padding: 12px 24px;        /* 按鈕內邊距 */
+  border-radius: 4px;        /* 圓角 */
+  cursor: pointer;           /* 滑鼠指標變成手指狀態 */
+
+
+  /* 過渡效果 (transition) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emphasis-btn:hover {
+  /* 滑鼠移入時的放大與陰影 */
+  transform: scale(1.05);    /* 放大 5% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 產生陰影 */
+}
+
+/* 導覽列連結的基本樣式 */
+nav ul li a {
+  background-color: #519dfa; /* 與按鈕相同的亮綠色 */
+  color: #0a192f;           /* 深色文字 */
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;    /* 移除底線 */
+  display: inline-block;    /* 讓 padding 生效 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 滑鼠移上去時的效果 */
+nav ul li a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-block {
+  width: 50%;         /* 設定一個固定或百分比寬度 */
+  margin: 0 auto;     /* 使區塊水平置中 */
+  background-color: #eee;
+}
