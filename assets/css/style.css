@@ -37,9 +37,9 @@ header nav ul li a {
 
 main {
   max-width: 1000px; /* 依需求調整你想要的寬度 */
-  margin: 2em auto;  /* 自動水平置中，上下保留 2em 空間 */
+  margin: 2rem auto;  /* 自動水平置中，上下保留 2em 空間 */
   background-color: #fff7f7;
-  padding: 2em;      /* 內邊距，讓內容不要貼邊 */
+  padding: 2rem;      /* 內邊距，讓內容不要貼邊 */
   box-sizing: border-box;
 }
 .content-wrapper {
@@ -165,12 +165,11 @@ nav ul li a:hover {
    Timeline 區塊
 --------------------- */
 #timeline {
-  background: #f9f6f6;
-  max-width: 900px;
-  margin: 2rem auto;
+  width: 100%;
+  margin: 2rem 0;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+
 }
 
 /* 父容器：垂直線 + 橫向捲動設定 */
@@ -217,9 +216,9 @@ nav ul li a:hover {
 /* 右側內容 */
 .timeline-content {
   background: #f0f0f0;
-  padding: 1rem;
-  border-radius: 6px;
-  position: relative;
+  padding: 1rem 3rem 1rem 1rem; /* 右側留3rem給icon */
+  box-sizing: border-box;
+  max-width: 100%; /* 避免內部撐爆 */
 }
 
 .timeline-content .right-icon {
@@ -305,6 +304,9 @@ nav ul li a:hover {
   .timeline-content .right-icon {
     width: 80px;
     height: 80px;
+  }
+  .timeline-content {
+    padding-right: 2rem; 
   }
 }
 
