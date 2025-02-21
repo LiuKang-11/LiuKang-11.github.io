@@ -56,7 +56,7 @@ a:hover {
 
 /* 卡片 / 區塊 */
 .card {
-  background-color: #112240;
+  background-color: #8cafea;
   padding: 1.5rem;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out;
@@ -137,5 +137,91 @@ nav ul li a:hover {
 .center-block {
   width: 50%;         /* 設定一個固定或百分比寬度 */
   margin: 0 auto;     /* 使區塊水平置中 */
-  background-color: #eee;
+  background-color: #bfbfbf;
+}
+
+
+/* 主要容器設定 */
+#timeline {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+
+/* for timeline*/
+
+/* 包含所有時間點區塊的容器 */
+.timeline-container {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* 左側垂直線 */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 30px; /* 時間軸距離容器左側的距離 */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc; /* 時間軸顏色，可自行修改 */
+}
+
+/* 每個時間點的區塊 */
+.timeline-block {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 60px; /* 預留空間給左側的線和圖示 */
+}
+
+/* 左側圓形圖示 */
+.timeline-icon {
+  width: 20px;
+  height: 20px;
+  background: #64ffda; /* 你想要的強調色 */
+  border-radius: 50%;
+  position: absolute;
+  left: 21px; /* 讓圓點大致在線的中間 */
+  top: 0;     /* 圓點與文字起始對齊，可依需求微調 */
+}
+
+/* 右側內容 */
+.timeline-content {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+
+  position: relative; /* 關鍵：讓偽元素絕對定位時，以此為參考 */
+  /* 其他原本的屬性保持不變 */
+}
+.timeline-content .right-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  /* 讓圖片自動縮放 */
+  overflow: hidden;
+}
+
+.timeline-content .right-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 或 contain, 看你想要的效果 */
+}
+
+/* 時間/期間文字樣式 */
+.timeline-date {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 內容標題、段落等可自行調整 */
+.timeline-content h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
 }

@@ -1,14 +1,10 @@
----
-layout: default
-title: "Home Page"
----
-
-# Welcome to my website
+I"<h1 id="welcome-to-my-website">Welcome to my website</h1>
 <div class="card">
-    <div data-aos="zoom-out">
+    <div data-aos="zoom ">
     I'm Leslie Liu, This is my site for introduction, resume and projects demo.
     這是一段會有淡入效果的文字。
     </div>
 </div>
 
-＃bundle exec jekyll build
+<p>＃bundle exec jekyll build</p>
+:ET

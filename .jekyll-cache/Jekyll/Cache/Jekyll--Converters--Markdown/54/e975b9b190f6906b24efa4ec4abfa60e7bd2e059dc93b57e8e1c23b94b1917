@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-
-  <!-- AOS CSS (選用) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- 自訂 CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-  
-
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1 id="about-me">About me</h1>
+I"<h1 id="about-me">About me</h1>
 
 <p>這裡是我的自我介紹和履歷。你可以在此處添加個人的背景、技能、工作經歷與學歷。</p>
 
@@ -41,7 +11,7 @@
 <p>For more detail about me:<a href="#">My resume</a>。</p>
 
 <section id="timeline">
-  <h2>Education and Work Experience</h2>
+  <h2>學歷與工作經歷</h2>
   <div class="timeline-container">
     <!-- 第一個時間點 -->
     <div class="timeline-block">
@@ -50,7 +20,7 @@
         <div class="right-icon">
         <img src="assets/images/ncstate-removebg-preview.png" alt="NTHU icon" />
         </div>
-        <span class="timeline-date">2024 - Now</span>
+        <span class="timeline-date">2021 - 2023</span>
         <h3>XXX 公司 - XXX 職稱</h3>
         <p>簡述你的職責、成就或專案成果。</p>
       </div>
@@ -63,7 +33,7 @@
         <div class="right-icon">
         <img src="assets/images/ITRI_logo-removebg-preview.png" alt="NTHU icon" />
         </div>
-        <span class="timeline-date">2023 - 2024</span>
+        <span class="timeline-date">2021 - 2023</span>
         <h3>XXX 公司 - XXX 職稱</h3>
         <p>簡述你的職責、成就或專案成果。</p>
       </div>
@@ -125,18 +95,4 @@
     <!-- 可以依需求繼續新增 timeline-block -->
   </div>
 </section>
-
-  </main>
-
-  <footer>
-    <p>© Leslie Liu's Website 2025</p>
-  </footer>
-
-  <!-- AOS JS (選用) -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-</body>
-</html>
+:ET
