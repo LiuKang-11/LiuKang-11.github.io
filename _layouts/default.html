@@ -17,7 +17,8 @@
 
 </head>
 <body>
-  <header>
+  <header class="side-nav">
+    <div class="nav-logo">Leslie Liu</div>
     <nav>
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -27,9 +28,11 @@
     </nav>
   </header>
 
-  <main>
-    {{ content }}
-  </main>
+  <div class="main-container">
+    <main>
+      {{ content }}
+    </main>
+  </div>
 
   <footer>
     <p>© {{ site.title }} {{ site.time | date: '%Y' }}</p>
