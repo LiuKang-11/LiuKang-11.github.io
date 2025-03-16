@@ -13,12 +13,15 @@
 
   <!-- 自訂 CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
-  
-
 </head>
 <body>
-  <header class="side-nav">
-    <div class="nav-logo">Leslie Liu</div>
+
+  <!-- 原本是 side-nav，改成 sidebar + id="sidebar" -->
+  <header class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 class="logo">Leslie Liu</h2>
+      <button class="toggle-btn" id="toggleBtn">≡</button>
+    </div>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -28,8 +31,9 @@
     </nav>
   </header>
 
+  <!-- mainContainer => 加上 id="mainContent" -->
   <div class="main-container">
-    <main>
+    <main id="mainContent">
       <h1 id="welcome-to-my-website">Welcome to my website</h1>
 <div class="card">
     <div data-aos="zoom-out">
@@ -48,6 +52,27 @@
   </footer>
 
   <!-- AOS JS (選用) -->
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("mainContent");
+
+    let isCollapsed = false; // 用於記錄目前狀態
+
+    toggleBtn.addEventListener("click", () => {
+      isCollapsed = !isCollapsed;
+      if (isCollapsed) {
+        // 收起
+        sidebar.classList.add("collapsed");
+        mainContent.classList.add("sidebar-collapsed");
+      } else {
+        // 展開
+        sidebar.classList.remove("collapsed");
+        mainContent.classList.remove("sidebar-collapsed");
+      }
+    });
+  </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
