@@ -18,20 +18,30 @@ body {
 
 header {
   background-color: #333;
-  padding: 1em 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;           /* 視需求可調 */
+  height: 100vh;          /* 全螢幕高度 */
+  background-color: #333;  /* 保持原本 header 背景 */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  z-index: 999;           /* 確保蓋住後方內容 */
 }
 
 header nav ul {
-  display: flex;            /* 讓 ul 成為彈性容器 */
-  justify-content: center;  /* 置中或使用 space-between 等分配空間 */
+  display: flex;            
+  flex-direction: column;   /* 垂直排 */
+  justify-content: flex-start;  
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1em; /* 每個 li 之間留 1em 間距 (可視需求) */
+  gap: 1em;
+  /* 原本的樣式可保留 */
 }
 
 header nav ul li {
-  display: inline-block; /* 小螢幕可在媒體查詢中改為 block */
+  display: block; /* 小螢幕可在媒體查詢中改為 block */
   margin: 0;
   padding: 0;
 }
@@ -69,6 +79,8 @@ footer {
   text-align: center;
   padding: 1em 0;
   background-color: #eee;
+  margin-left: 200px;       /* 與 header 同寬 */
+
 }
 
 /* ---------------------
@@ -287,17 +299,25 @@ nav ul li a:hover {
 /* 手機或較小螢幕 (max-width: 600px) */
 @media (max-width: 600px) {
   /* 若 main 仍要固定寬度，可保留 800px；若想讓手機也能稍微縮放，可在這裡改動 */
-  /* main {
-    width: 90%;
-    margin: 1rem auto;
-  } */
+  main {
+    margin-left: 0;
+  } 
 
+  /* header 不再固定左側，而是回到頂部 */
+  header {
+    position: static;   /* 取消 fixed */
+    width: 100%;
+    height: auto;
+    padding: 1rem;      /* 視需求縮小 */
+  }
   /* 導覽列改為直列顯示 */
   header nav ul li {
     display: block;
     margin: 0.5em 0;
   }
-
+  footer {
+    margin-left: 0;
+  }
   /* Timeline：縮小左側空間 */
   .timeline-container::before {
     left: 15px;
