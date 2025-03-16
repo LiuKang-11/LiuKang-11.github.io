@@ -356,37 +356,7 @@ nav ul li a:hover {
 --------------------- */
 /* 手機或較小螢幕 (max-width: 600px) */
 @media (max-width: 600px) {
-  /* 若 main 仍要固定寬度，可保留 800px；若想讓手機也能稍微縮放，可在這裡改動 */
-  .sidebar {
-    position: static;   /* 不再固定 */
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-  }
-  .main-container {
-    margin-left: 0;
-    display: block;     /* 取消 flex，直接用區塊排版 */
-  }
 
-  main {
-    margin: 1rem;
-  }
-
-  /* header 不再固定左側，而是回到頂部 */
-  header {
-    position: static;   /* 取消 fixed */
-    width: 100%;
-    height: auto;
-    padding: 1rem;      /* 視需求縮小 */
-  }
-  /* 導覽列改為直列顯示 */
-  header nav ul li {
-    display: block;
-    margin: 0.5em 0;
-  }
-  footer {
-    margin-left: 0;
-  }
   /* Timeline：縮小左側空間 */
   .timeline-container::before {
     left: 15px;
