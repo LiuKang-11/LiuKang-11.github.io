@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 240px;       /* 左側欄寬度，可自行調整 */
+  width: 180px;       /* 左側欄寬度，可自行調整 */
   height: 100vh;      /* 佔滿畫面高度 */
   background-color: #0a192f; /* 深色背景 (可改) */
   padding: 2rem 1rem;
@@ -67,7 +67,7 @@
 /* ---------------------
    全域樣式
 --------------------- */
-body {
+html, body {
   min-width: 1000px;  /* 你想要的固定總寬度 */
   overflow-x: auto;   /* 超出時允許左右捲動 */
   font-family: 'Helvetica Neue', Arial, sans-serif;
