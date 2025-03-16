@@ -3,6 +3,7 @@
 ----------------------------- */
 html, body {
   min-width: 1000px;  /* 固定總寬度，小螢幕時可左右滑動 */
+  height: 100%;
   overflow-x: auto;   /* 超出時允許水平捲動 */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
@@ -111,7 +112,7 @@ html, body {
 main {
   position: relative;
   z-index: 1;
-  width: 800px;          /* 固定寬度，不隨螢幕縮放 */
+  width: 70%;          /* 固定寬度，不隨螢幕縮放 */
   margin: 2rem;          /* 讓 main 與容器有間距 */
   overflow-x: auto;      /* 若內容超出 800px，允許水平捲動 */
   background-color: #fff7f7;
@@ -130,6 +131,7 @@ main.sidebar-collapsed {
    footer
 ----------------------------- */
 footer {
+  width: 100%;
   text-align: center;
   padding: 1em 0;
   background-color: #eee;
