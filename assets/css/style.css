@@ -1,6 +1,15 @@
 /* --------------------------------
    左側固定導覽列 
 ----------------------------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;   /* 固定 200px */
+  height: 100vh;
+  background-color: #0a192f;
+  /* 其他樣式 */
+}
 .side-nav {
   position: fixed;
   top: 0;
@@ -59,6 +68,8 @@
    全域樣式
 --------------------- */
 body {
+  min-width: 1000px;  /* 你想要的固定總寬度 */
+  overflow-x: auto;   /* 超出時允許左右捲動 */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -117,6 +128,7 @@ main {
   width: 800px;                /* 固定寬度，不隨螢幕縮放 */
   margin: 2rem auto;           /* 水平置中，上下 2rem */
   margin-left: 240px;
+  min-height: 100vh;
   overflow-x: auto;            /* 超出寬度時，出現水平捲軸 */
   background-color: #fff7f7;   /* 白底 */
   padding: 2rem;
