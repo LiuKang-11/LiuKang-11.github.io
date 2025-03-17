@@ -1,0 +1,72 @@
+I"�
+<h1 id="my-projects">My projects</h1>
+
+<h2 id="project-1thermoplastic-elastomer-ml-predictor">Project 1：Thermoplastic Elastomer ML predictor</h2>
+<h3 id="description">Description：</h3>
+<ul>
+  <li><strong>ML Prediction:</strong> Predict stress-strain curves from triblock copolymer parameters.</li>
+  <li><strong>Bayesian Optimization:</strong> Integrate Bayesian optimization for process improvement.</li>
+  <li><strong>Simulation Data:</strong> Use simulation to link molecular chain length, monomer volume ratio, and irregular chain ratios with stress-strain behavior.</li>
+  <li><strong>Modeling Framework:</strong> Build forward and inverse models to enhance material performance predictions.</li>
+</ul>
+
+<p>Link：<a href="https://github.com/LiuKang-11/Thermoplastic-Elastomer-inverse-design">Github repo</a></p>
+
+<ul>
+  <li>Forward prediction</li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/thermo1.mp4" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+<ul>
+  <li></li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/thermo2.mp4" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+<hr />
+
+<h2 id="專案二專案名稱">專案二：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project2">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案一專案名稱">專案一：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project1">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案二專案名稱-1">專案二：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project2">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案一專案名稱-1">專案一：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project1">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案二專案名稱-2">專案二：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project2">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案一專案名稱-2">專案一：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project1">查看專案</a></p>
+
+<hr />
+
+<h2 id="專案二專案名稱-3">專案二：專案名稱</h2>
+<p>描述：這是一個介紹專案功能與特色的簡述。<br />
+連結：<a href="https://github.com/username/project2">查看專案</a></p>
+
+<hr />
+:ET
