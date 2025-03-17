@@ -1,0 +1,168 @@
+I"I<h1 id="my-projects">My projects</h1>
+
+<h2 id="project-1thermoplastic-elastomer-ml-predictor">Project 1：Thermoplastic Elastomer ML predictor</h2>
+<h3 id="description">Description：</h3>
+<ul>
+  <li><strong>ML Prediction:</strong> Predict stress-strain curves from triblock copolymer parameters.</li>
+  <li><strong>Bayesian Optimization:</strong> Integrate Bayesian optimization for process improvement.</li>
+  <li><strong>Simulation Data:</strong> Use simulation to link molecular chain length, monomer volume ratio, and irregular chain ratios with stress-strain behavior.</li>
+  <li><strong>Modeling Framework:</strong> Build forward and inverse models to enhance material performance predictions.</li>
+</ul>
+
+<p>Link：<a href="https://github.com/LiuKang-11/Thermoplastic-Elastomer-inverse-design">Github repo</a></p>
+
+<ul>
+  <li><strong>Forward Prediction DEMO</strong></li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/thermo1.mp4" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+
+<ul>
+  <li><strong>Inverse Design DEMO</strong></li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/thermo2.mp4" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+<hr />
+
+<h2 id="project-2caecnn-autoencoder-model-for-tse-twin-screw-extruder-process">Project 2：CAE(CNN Autoencoder) Model for TSE (Twin screw extruder) process</h2>
+<h3 id="description-1">Description：</h3>
+<ul>
+  <li>Applied machine learning techniques to monitor and optimize the twin screw extruder process.</li>
+  <li>Developed a <strong>Convolutional Autoencoder Model</strong> to analyze and reconstruct screw elements effectively.</li>
+  <li>Utilized <strong>Principal Component Analysis (PCA)</strong> for visualizing encoded features of twin screw elements.</li>
+</ul>
+
+<p>Link：<a href="https://github.com/LiuKang-11/CAE-model-for-twin-screw-process">Github repo</a></p>
+
+<ul>
+  <li><strong>Model Architecture</strong></li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/13636671/128841487-128e2580-7fa1-4dd5-9273-99b901ac9766.png" alt="image" /></p>
+
+<ul>
+  <li><strong>Some result</strong>
+    <blockquote>
+      <p>We display the model’s results with several visualizations, like the reconstruction of screw image, regression loss, and the PCA analysis for cluster</p>
+    </blockquote>
+  </li>
+  <li>
+    <ul>
+      <li><strong>Reconstruction</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/13636671/128842031-ee18f944-3665-4954-9fe2-ae2f4d85b6d3.png" alt="image" /></p>
+
+<ul>
+  <li>
+    <ul>
+      <li><strong>Regression</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/13636671/128842140-2793a577-1fca-4d76-a85c-2b29ebab2c5d.png" alt="image" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/13636671/128842154-ad8e8564-a1fd-4ac0-a6fb-ae18a48fd0bc.png" alt="image" /></p>
+
+<ul>
+  <li>
+    <ul>
+      <li><strong>PCA analysis</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/13636671/128842304-a3f2ae84-4382-4345-a845-9340e007723b.png" alt="image" /></p>
+
+<hr />
+
+<h2 id="project-3game-ai-design">Project 3：Game AI design</h2>
+<h3 id="description-2">Description：</h3>
+<ul>
+  <li>Implement some basic AI behavior in game like orientation, evade…etc</li>
+  <li>Implement path finding algorithm <strong>(Dijkstra and A*)</strong> into AI characters</li>
+  <li>Develop multi AI agents by <strong>RL algorithm</strong> (In progress)</li>
+</ul>
+
+<p>Link：<a href="https://github.com/LiuKang-11/CSC584">Github repo</a></p>
+
+<ul>
+  <li><strong>Flock DEMO</strong></li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/HW2_Part4 Video.mov" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+
+<ul>
+  <li><strong>Path Finding DEMO</strong></li>
+</ul>
+<video width="600" controls="">
+  <source src="https://liukang-11.github.io/assets/videos/HW3.mov" type="video/mp4" />
+  Your browser does not support video playback.
+</video>
+
+<hr />
+
+<h2 id="project-4nasa-close-approach-ml-analysis">Project 4：NASA close Approach ML Analysis</h2>
+<h3 id="description-3">Description：</h3>
+<ul>
+  <li><strong>Objective:</strong>
+    <ul>
+      <li>Analyze Near-Earth Objects (NEOs) to assess their trajectories and impact risks using NASA’s JPL data and real-time data from the CAD API.</li>
+      <li>Develop machine learning models for early identification of potentially hazardous objects (PHOs).</li>
+    </ul>
+  </li>
+  <li><strong>Methodology:</strong>
+    <ul>
+      <li><strong>Data Handling:</strong>
+        <ul>
+          <li>Merge CSV dataset with data from NASA’s JPL API.</li>
+          <li>Preprocess data by removing duplicates/missing values and normalizing numeric features.</li>
+        </ul>
+      </li>
+      <li><strong>Exploratory Data Analysis (EDA):</strong>
+        <ul>
+          <li>Analyze feature distributions (e.g., distance, velocity, absolute magnitude).</li>
+        </ul>
+      </li>
+      <li><strong>Machine Learning Techniques:</strong>
+        <ul>
+          <li><strong>K-Means Clustering:</strong>
+            <ul>
+              <li>Group NEOs into two clusters (hazardous vs. non-hazardous) using silhouette scores for optimal cluster determination.</li>
+            </ul>
+          </li>
+          <li><strong>K-Nearest Neighbors (KNN):</strong>
+            <ul>
+              <li>Classify NEOs with 99% accuracy based on normalized features.</li>
+            </ul>
+          </li>
+          <li><strong>Principal Component Analysis (PCA):</strong>
+            <ul>
+              <li>Reduce dimensionality for visualization and feature importance analysis.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Link：<a href="https://github.com/LiuKang-11/NASA-close-ML-Analysis">Github repo</a></p>
+
+<ul>
+  <li><strong>Work Flow</strong></li>
+</ul>
+
+<p><img src="https://github.com/user-attachments/assets/a910af1e-c6da-4a15-8d6e-e2c723468bc8" alt="alda2 drawio" /></p>
+
+<hr />
+:ET

@@ -1,6 +1,7 @@
 /* -----------------------------
    全域 / Reset
 ----------------------------- */
+/*＃bundle exec jekyll server*/
 html, body {
   min-width: 1000px;  /* 固定總寬度，小螢幕時可左右滑動 */
   height: 100%;
@@ -246,7 +247,7 @@ nav ul li a:hover {
    Timeline 區塊
 ----------------------------- */
 #timeline {
-  width: 700px;       /* 若要觸發水平捲動，可比 main 800px 大 */
+  width: 1000px;       /* 若要觸發水平捲動，可比 main 800px 大 */
   margin: 2rem 0;
   padding: 2rem;
   box-sizing: border-box;
