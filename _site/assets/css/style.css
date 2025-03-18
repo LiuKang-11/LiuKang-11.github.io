@@ -3,9 +3,9 @@
 ----------------------------- */
 /*＃bundle exec jekyll server*/
 html, body {
-  /*min-width: 1000px;  只在平板以上才固定寬度 */
+  min-width: 1000px; /* 只在平板以上才固定寬度 */
   height: 100%;
-  /* overflow-x: auto;    超出時允許水平捲動 */
+  overflow-x: auto;   /* 超出時允許水平捲動 */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -115,7 +115,7 @@ main {
   z-index: 1;
   width: 800;          /* 固定寬度，不隨螢幕縮放 */
   margin: 2rem;          /* 讓 main 與容器有間距 */
-  /*overflow-x: auto;       若內容超出 800px，允許水平捲動 */
+  overflow-x: auto;       /*若內容超出 800px，允許水平捲動 */
   background-color: #fff7f7;
   padding: 2rem;
   box-sizing: border-box;
