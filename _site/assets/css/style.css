@@ -113,7 +113,7 @@ html, body {
 main {
   position: relative;
   z-index: 1;
-  width: 800px;          /* 固定寬度，不隨螢幕縮放 */
+  width: 1000px;          /* 固定寬度，不隨螢幕縮放 */
   margin: 2rem;          /* 讓 main 與容器有間距 */
   overflow-x: auto;       /*若內容超出 800px，允許水平捲動 */
   background-color: #fff7f7;
