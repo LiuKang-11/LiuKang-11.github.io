@@ -3,9 +3,9 @@
 ----------------------------- */
 /*＃bundle exec jekyll server*/
 html, body {
-  min-width: 1000px; /* 只在平板以上才固定寬度 */
+  /*min-width: 1000px;  只在平板以上才固定寬度 */
   height: 100%;
-  overflow-x: auto;   /* 超出時允許水平捲動 */
+  /* overflow-x: auto;    超出時允許水平捲動 */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
