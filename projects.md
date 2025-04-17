@@ -66,9 +66,15 @@ Link：[Github repo](https://github.com/LiuKang-11/CAE-model-for-twin-screw-proc
 ### Description： 
 - Implement some basic AI behavior in game like orientation, evade...etc
 - Implement path finding algorithm **(Dijkstra and A*)** into AI characters
-- Develop multi AI agents by **RL algorithm** (In progress) 
+- Develop multi AI agents by **RL algorithm** 
 
 Link：[Github repo](https://github.com/LiuKang-11/CSC584)
+
+* **DeadZone - DQN AI agent for 2D shooting game**
+<video width="600" controls>
+  <source src="https://liukang-11.github.io/assets/videos/Deadzone_complete_game.mov" type="video/mp4">
+  Your browser does not support video playback.
+</video>
 
 * **Flock DEMO**
 <video width="600" controls>
