@@ -69,6 +69,7 @@ Link：[Github repo](https://github.com/LiuKang-11/CAE-model-for-twin-screw-proc
 - Develop multi AI agents by **RL algorithm** 
 
 Link：[Github repo](https://github.com/LiuKang-11/CSC584)
+Link：[Github repo]([https://github.com/LiuKang-11/CSC584](https://github.com/LiuKang-11/Deadzone))
 
 * **DeadZone - DQN AI agent for 2D shooting game**
 <video width="600" controls>
