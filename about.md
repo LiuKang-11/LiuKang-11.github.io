@@ -5,7 +5,7 @@ title: "About me"
 
 # About me
 
-<img src="assets/images/selfie2.jpeg" style="width:50%;">
+<img src="assets/images/selfie3.png" style="width:50%;">
 
 - **Name：** Leslie Liu
 - **Major：** NUSU MCS 26 Spring Grad
