@@ -101,19 +101,19 @@ Links:
 
 ### DeadZone Demo
 <video width="600" controls>
-  <source src="https://liukang-11.github.io/assets/videos/Deadzone_complete_game.mp4" type="video/mp4">
+  <source src="/assets/videos/Deadzone_complete_game.mov" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
 ### Flock Demo
 <video width="600" controls>
-  <source src="https://liukang-11.github.io/assets/videos/HW2_Part4%20Video.mp4" type="video/mp4">
+  <source src="/assets/videos/HW2_Part4" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
 ### Path Finding Demo
 <video width="600" controls>
-  <source src="https://liukang-11.github.io/assets/videos/HW3.mp4" type="video/mp4">
+  <source src="/assets/videos/HW3.mov" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
