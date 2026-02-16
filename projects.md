@@ -107,7 +107,7 @@ Links:
 
 ### Flock Demo
 <video width="600" controls>
-  <source src="/assets/videos/HW2_Part4" type="video/mp4">
+  <source src="/assets/videos/HW2_Part4 Video.mov" type="video/mp4">
   Your browser does not support video playback.
 </video>
 
