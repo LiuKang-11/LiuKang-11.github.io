@@ -27,7 +27,7 @@ Links:
   <iframe
     width="600"
     height="338"
-    src="https://www.youtube.com/watch?v=5htZazPobtw"
+    src="https://www.youtube.com/embed/5htZazPobtw"
     title="BigScore App Demo"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
