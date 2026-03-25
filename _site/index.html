@@ -2,81 +2,318 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1000, initial-scale=0.5, user-scalable=yes">
-  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Leslie Liu's Website</title>
+  <meta name="description" content="My site for introduction, resume and projects">
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-
-  <!-- AOS CSS (選用) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- 自訂 CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <div class="page-shell">
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
 
-  <!-- 原本是 side-nav，改成 sidebar + id="sidebar" -->
-  <header class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2 class="logo">Leslie Liu</h2>
-      <button class="toggle-btn" id="toggleBtn">≡</button>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-brand" href="/">Leslie Liu</a>
+
+        <div class="site-header__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle color theme"
+            title="Toggle color theme">
+            <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle__label">Light</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="siteNav"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="siteNav">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="mailto:s9172051212@gmail.com">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero-panel">
+  <div data-aos="fade-up">
+    <span class="eyebrow">Machine Learning Engineer • AI Product Builder</span>
+    <h1 class="hero-title">Leslie Liu</h1>
+    <p class="hero-subtitle">
+      I build applied AI products that connect machine learning, full-stack execution,
+      and clear user-facing experiences. My background blends scientific modeling,
+      process engineering, product thinking, and hands-on software delivery.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button" href="/projects">View Projects</a>
+      <a class="button-secondary" href="/about">About Me</a>
+      <a class="button-secondary" href="mailto:s9172051212@gmail.com">Contact</a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- mainContainer => 加上 id="mainContent" -->
-  <div class="main-container">
-    <main id="mainContent">
-      <h1 id="welcome-to-my-website">Welcome to my website</h1>
-<div class="card">
-    <div data-aos="zoom-out">
-    Hello, I'm Leslie Liu. 
-    Welcome to my website! 
-    This is the place for my introduction, resume and projects demo.
+    <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-card">
+        <strong>5+</strong>
+        <span>projects across ML systems, scientific modeling, and interactive AI experiences</span>
+      </div>
+      <div class="stat-card">
+        <strong>3rd</strong>
+        <span>place at HackNCState with a production-ready crypto reliability scoring product</span>
+      </div>
+      <div class="stat-card">
+        <strong>Research + Ship</strong>
+        <span>experience spanning AI research, semiconductor process engineering, and deployable software</span>
+      </div>
     </div>
-</div>
-
-
-    </main>
   </div>
 
-  <footer>
-    <p>© Leslie Liu's Website 2025</p>
-  </footer>
+  <div class="hero-visual" data-aos="fade-left">
+    <div class="portrait-card">
+      <span class="portrait-badge">Open to building practical AI products</span>
+      <img src="/assets/images/selfie3.png" alt="Portrait of Leslie Liu" />
+    </div>
+  </div>
+</section>
 
-  <!-- AOS JS (選用) -->
-  <script>
-    const toggleBtn = document.getElementById("toggleBtn");
-    const sidebar = document.getElementById("sidebar");
-    const mainContent = document.getElementById("mainContent");
+<section class="section-panel" data-aos="fade-up">
+  <div class="section-header">
+    <div>
+      <span class="eyebrow">Selected Work</span>
+      <h2>Projects with technical depth and clear product intent</h2>
+    </div>
+    <p>
+      A cleaner first look at the work that best represents my mix of machine learning,
+      systems thinking, and applied experimentation.
+    </p>
+  </div>
 
-    let isCollapsed = false; // 用於記錄目前狀態
+  <div class="project-grid">
+    <article class="project-card">
+      <span class="pill">Hackathon • Multi-agent AI</span>
+      <h3>BigScore</h3>
+      <p>
+        A crypto reliability scoring platform that combines multi-source market, development,
+        and security signals into an explainable 0-100 trust score.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Agentic workflow</span>
+        <span class="pill">Scoring pipeline</span>
+        <span class="pill">API-backed UI</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects#bigscore">Read More</a>
+      </div>
+    </article>
 
-    toggleBtn.addEventListener("click", () => {
-      isCollapsed = !isCollapsed;
-      if (isCollapsed) {
-        // 收起
-        sidebar.classList.add("collapsed");
-        mainContent.classList.add("sidebar-collapsed");
-      } else {
-        // 展開
-        sidebar.classList.remove("collapsed");
-        mainContent.classList.remove("sidebar-collapsed");
-      }
-    });
-  </script>
+    <article class="project-card">
+      <span class="pill">Materials ML</span>
+      <h3>Thermoplastic Elastomer Predictor</h3>
+      <p>
+        Forward and inverse ML models for polymer stress-strain prediction, paired with
+        Bayesian optimization to guide performance-oriented material design.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Scientific ML</span>
+        <span class="pill">Bayesian optimization</span>
+        <span class="pill">Inverse design</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects#thermoplastic">Read More</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="pill">Interactive Systems</span>
+      <h3>Game AI and ML Experiments</h3>
+      <p>
+        Interactive AI experiments spanning path finding, reinforcement learning,
+        and gameplay behaviors in visually demonstrable environments.
+      </p>
+      <div class="pill-row">
+        <span class="pill">A*</span>
+        <span class="pill">Dijkstra</span>
+        <span class="pill">RL agents</span>
+      </div>
+      <div class="project-links">
+        <a href="/projects#game-ai">Read More</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section-panel" data-aos="fade-up">
+  <div class="section-header">
+    <div>
+      <span class="eyebrow">About Snapshot</span>
+      <h2>Bridging research, engineering, and product delivery</h2>
+    </div>
+    <p>
+      My background started in chemical engineering and evolved through semiconductor process
+      engineering, AI research, and software-focused graduate study in computer science.
+    </p>
+  </div>
+
+  <div class="feature-grid">
+    <article class="mini-card">
+      <h3>What I bring</h3>
+      <p>
+        I build systems that connect modeling, data pipelines, and user-facing delivery,
+        so research ideas can become tools people can actually use.
+      </p>
+    </article>
+    <article class="mini-card">
+      <h3>Current focus</h3>
+      <p>
+        Machine learning engineering, applied AI product workflows, and interfaces that make
+        model output easier to understand, trust, and act on.
+      </p>
+    </article>
+    <article class="mini-card">
+      <h3>Working style</h3>
+      <p>
+        Fast iteration, technical ownership, and a bias toward moving from experimentation
+        to demos, prototypes, and working software with measurable value.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section-panel" data-aos="fade-up">
+  <div class="section-header">
+    <div>
+      <span class="eyebrow">Skills</span>
+      <h2>Tools and areas I use most</h2>
+    </div>
+    <p>
+      A compact overview of the areas that show up repeatedly across my work.
+    </p>
+  </div>
+
+  <div class="pill-row">
+    <span class="pill">Python</span>
+    <span class="pill">Machine Learning</span>
+    <span class="pill">Data Science</span>
+    <span class="pill">LLM Apps</span>
+    <span class="pill">Data Analysis</span>
+    <span class="pill">MLOps Mindset</span>
+    <span class="pill">Product Prototyping</span>
+    <span class="pill">Scientific Computing</span>
+    <span class="pill">Automation</span>
+    <span class="pill">Frontend Integration</span>
+  </div>
+</section>
+
+<section class="section-panel" data-aos="fade-up">
+  <div class="section-header">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Let&apos;s build something useful and thoughtful</h2>
+    </div>
+    <p>
+      If you want to talk about AI products, engineering, or collaboration opportunities,
+      I&apos;m always happy to connect.
+    </p>
+  </div>
+
+  <div class="contact-grid">
+    <article class="contact-card">
+      <h3>Email</h3>
+      <p><a href="mailto:s9172051212@gmail.com">s9172051212@gmail.com</a></p>
+    </article>
+    <article class="contact-card">
+      <h3>GitHub</h3>
+      <p><a href="https://github.com/LiuKang-11">github.com/LiuKang-11</a></p>
+    </article>
+    <article class="contact-card">
+      <h3>Resume</h3>
+      <p><a href="https://drive.google.com/drive/folders/1c9TB_iGpKQIuBhPy9GeznBRWCzmMFXTM?usp=sharing">View Resume Folder</a></p>
+    </article>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Built with Jekyll and a lighter, cleaner portfolio direction.</p>
+        <p>© 2026 Leslie Liu</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-  </script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeLabel = themeToggle?.querySelector(".theme-toggle__label");
+    const themeIcon = themeToggle?.querySelector(".theme-toggle__icon");
+    const navToggle = document.getElementById("navToggle");
+    const siteNav = document.getElementById("siteNav");
+    const storedTheme = localStorage.getItem("theme");
+    const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+    const applyTheme = (theme) => {
+      root.setAttribute("data-theme", theme);
+      if (themeLabel) {
+        themeLabel.textContent = theme === "dark" ? "Dark" : "Light";
+      }
+      if (themeIcon) {
+        themeIcon.textContent = theme === "dark" ? "☾" : "☀";
+      }
+    };
+
+    applyTheme(storedTheme || (preferredDark ? "dark" : "light"));
+
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", nextTheme);
+        applyTheme(nextTheme);
+      });
+    }
+
+    if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open", isOpen);
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: "ease-out-cubic",
+      offset: 40
+    });
+  </script>
 </body>
 </html>

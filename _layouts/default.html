@@ -2,72 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1000, initial-scale=0.5, user-scalable=yes">
-  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-
-  <!-- AOS CSS (選用) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- 自訂 CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <div class="page-shell">
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
 
-  <!-- 原本是 side-nav，改成 sidebar + id="sidebar" -->
-  <header class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2 class="logo">Leslie Liu</h2>
-      <button class="toggle-btn" id="toggleBtn">≡</button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about' | relative_url }}">About</a></li>
-        <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}">Leslie Liu</a>
 
-  <!-- mainContainer => 加上 id="mainContent" -->
-  <div class="main-container">
-    <main id="mainContent">
+        <div class="site-header__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle color theme"
+            title="Toggle color theme">
+            <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+            <span class="theme-toggle__label">Light</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="siteNav"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="siteNav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/about' | relative_url }}">About</a>
+            <a href="{{ '/projects' | relative_url }}">Projects</a>
+            <a href="mailto:{{ site.email }}">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
       {{ content }}
     </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>Built with Jekyll and a lighter, cleaner portfolio direction.</p>
+        <p>© {{ site.time | date: '%Y' }} Leslie Liu</p>
+      </div>
+    </footer>
   </div>
-
-  <footer>
-    <p>© {{ site.title }} {{ site.time | date: '%Y' }}</p>
-  </footer>
-
-  <!-- AOS JS (選用) -->
-  <script>
-    const toggleBtn = document.getElementById("toggleBtn");
-    const sidebar = document.getElementById("sidebar");
-    const mainContent = document.getElementById("mainContent");
-
-    let isCollapsed = false; // 用於記錄目前狀態
-
-    toggleBtn.addEventListener("click", () => {
-      isCollapsed = !isCollapsed;
-      if (isCollapsed) {
-        // 收起
-        sidebar.classList.add("collapsed");
-        mainContent.classList.add("sidebar-collapsed");
-      } else {
-        // 展開
-        sidebar.classList.remove("collapsed");
-        mainContent.classList.remove("sidebar-collapsed");
-      }
-    });
-  </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-  </script>
+    const root = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const themeLabel = themeToggle?.querySelector(".theme-toggle__label");
+    const themeIcon = themeToggle?.querySelector(".theme-toggle__icon");
+    const navToggle = document.getElementById("navToggle");
+    const siteNav = document.getElementById("siteNav");
+    const storedTheme = localStorage.getItem("theme");
+    const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+    const applyTheme = (theme) => {
+      root.setAttribute("data-theme", theme);
+      if (themeLabel) {
+        themeLabel.textContent = theme === "dark" ? "Dark" : "Light";
+      }
+      if (themeIcon) {
+        themeIcon.textContent = theme === "dark" ? "☾" : "☀";
+      }
+    };
+
+    applyTheme(storedTheme || (preferredDark ? "dark" : "light"));
+
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", nextTheme);
+        applyTheme(nextTheme);
+      });
+    }
+
+    if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open", isOpen);
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      siteNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: "ease-out-cubic",
+      offset: 40
+    });
+  </script>
 </body>
 </html>

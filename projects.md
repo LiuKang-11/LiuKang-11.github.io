@@ -4,135 +4,241 @@ title: "Projects"
 permalink: /projects/
 ---
 
-# My Projects
+<section class="content-panel" data-aos="fade-up">
+  <span class="eyebrow">Projects</span>
+  <h1>Selected projects across AI, ML systems, and interactive computing</h1>
+  <p>
+    This page turns the project list into a cleaner case-study style layout so it reads well on both
+    desktop and mobile while keeping demos, media, and links easy to scan.
+  </p>
+</section>
 
----
+<section class="content-panel" id="bigscore" data-aos="fade-up">
+  <span class="eyebrow">Project 1</span>
+  <h2>Crypto Reliability Tracker (BigScore)</h2>
 
-## Project 1: Crypto Reliability Tracker (BigScore)
-### Description
-- **Built an end-to-end crypto reliability scoring service** that aggregates multi-source signals (market integrity, dev velocity, on-chain security) into a calibrated 0–100 master score with per-component rationales.
-- **Implemented a multi-agent orchestrated scoring pipeline** (data fetch → schema normalization → subscore inference → weighted aggregation).
-- **Deployed an API-backed UI** to score user-queried assets in real time; added fallbacks for non-EVM tokens and common data/infra failure cases.
-- **Won 3rd place at HackNCState (Agency Track).**
+  <div class="project-summary">
+    <div>
+      <p>
+        An end-to-end crypto reliability scoring service that aggregates multi-source signals such as
+        market integrity, development activity, and on-chain security into a calibrated 0-100 score.
+      </p>
+      <ul>
+        <li>Built a multi-agent style scoring pipeline from data fetch and schema normalization to subscore inference and weighted aggregation.</li>
+        <li>Created an API-backed user experience for real-time scoring with fallbacks for non-EVM assets and infrastructure edge cases.</li>
+        <li>Won 3rd place at HackNCState in the Agency Track.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        AI systems, scoring logic, and product packaging
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://github.com/LiuKang-11/NChack_2026_BigScore">GitHub</a>
+          <a href="https://devpost.com/software/big-score-17u35c?ref_content=my-projects-tab&ref_feature=my_projects">Devpost</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-Links:
-- [GitHub repo](https://github.com/LiuKang-11/NChack_2026_BigScore)
-- [Devpost](https://devpost.com/software/big-score-17u35c?ref_content=my-projects-tab&ref_feature=my_projects)
+  <div class="project-showcase">
+    <div class="media-frame">
+      <img src="{{ '/assets/images/nchack_workflow.jpg' | relative_url }}" alt="BigScore workflow">
+    </div>
+    <div class="media-frame">
+      <iframe
+        src="https://www.youtube.com/embed/5htZazPobtw"
+        title="BigScore App Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
-### Workflow
-![BigScore Workflow](/assets/images/nchack_workflow.jpg)
+<section class="content-panel" id="thermoplastic" data-aos="fade-up">
+  <span class="eyebrow">Project 2</span>
+  <h2>Thermoplastic Elastomer ML Predictor</h2>
 
-### App Demo (YouTube)
-<div style="max-width:600px">
-  <iframe
-    width="600"
-    height="338"
-    src="https://www.youtube.com/embed/5htZazPobtw"
-    title="BigScore App Demo"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+  <div class="project-summary">
+    <div>
+      <p>
+        A machine learning framework for predicting stress-strain curves from triblock copolymer parameters,
+        with forward and inverse models supporting material performance exploration.
+      </p>
+      <ul>
+        <li>Predicted stress-strain curves from polymer structure-related parameters.</li>
+        <li>Integrated Bayesian optimization to support process and performance improvement.</li>
+        <li>Connected simulation parameters with physical behavior in a more interpretable workflow.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        Materials ML, prediction, and inverse design
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://github.com/LiuKang-11/Thermoplastic-Elastomer-inverse-design">GitHub</a>
+          <a href="{{ '/assets/videos/thermo1.mp4' | relative_url }}">Forward Demo Video</a>
+          <a href="{{ '/assets/videos/thermo2.mp4' | relative_url }}">Inverse Demo Video</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
----
+  <div class="project-showcase">
+    <div class="media-frame">
+      <video controls>
+        <source src="{{ '/assets/videos/thermo1.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    <div class="media-frame">
+      <video controls>
+        <source src="{{ '/assets/videos/thermo2.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+  </div>
+</section>
 
-## Project 2: Thermoplastic Elastomer ML Predictor
-### Description
-- **ML Prediction:** Predict stress-strain curves from triblock copolymer parameters.
-- **Bayesian Optimization:** Integrate Bayesian optimization for process improvement.
-- **Simulation Data:** Link molecular chain length, monomer volume ratio, and irregular chain ratios with stress-strain behavior.
-- **Modeling Framework:** Build forward and inverse models to enhance material performance predictions.
+<section class="content-panel" data-aos="fade-up">
+  <span class="eyebrow">Project 3</span>
+  <h2>CAE Model for Twin Screw Extruder Analysis</h2>
 
-Link:
-- [GitHub repo](https://github.com/LiuKang-11/Thermoplastic-Elastomer-inverse-design)
+  <div class="project-summary">
+    <div>
+      <p>
+        A convolutional autoencoder approach for analyzing and reconstructing twin screw extruder elements,
+        supported by PCA for encoded-feature visualization.
+      </p>
+      <ul>
+        <li>Applied machine learning techniques to monitor and optimize extrusion processes.</li>
+        <li>Built representation learning workflows for screw element analysis and reconstruction.</li>
+        <li>Used PCA to reveal patterns in encoded features.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        Autoencoders, process modeling, and visualization
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://github.com/LiuKang-11/CAE-model-for-twin-screw-process">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-### Forward Prediction Demo
-<video width="600" controls>
-  <source src="https://liukang-11.github.io/assets/videos/thermo1.mp4" type="video/mp4">
-  Your browser does not support video playback.
-</video>
+  <div class="project-showcase">
+    <div class="media-frame">
+      <img src="https://user-images.githubusercontent.com/13636671/128841487-128e2580-7fa1-4dd5-9273-99b901ac9766.png" alt="CAE architecture">
+    </div>
+    <div class="media-frame">
+      <img src="https://user-images.githubusercontent.com/13636671/128842304-a3f2ae84-4382-4345-a845-9340e007723b.png" alt="PCA analysis">
+    </div>
+  </div>
+</section>
 
-### Inverse Design Demo
-<video width="600" controls>
-  <source src="https://liukang-11.github.io/assets/videos/thermo2.mp4" type="video/mp4">
-  Your browser does not support video playback.
-</video>
+<section class="content-panel" id="game-ai" data-aos="fade-up">
+  <span class="eyebrow">Project 4</span>
+  <h2>Game AI Design</h2>
 
----
+  <div class="project-summary">
+    <div>
+      <p>
+        A collection of game AI experiments spanning movement behaviors, classic path finding,
+        and reinforcement-learning-driven agents in interactive environments.
+      </p>
+      <ul>
+        <li>Implemented AI behaviors such as orientation and evade strategies.</li>
+        <li>Built Dijkstra and A* path-finding workflows for navigation problems.</li>
+        <li>Explored multi-agent behaviors and RL in game scenarios.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        Interactive AI, search, and RL experiments
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://github.com/LiuKang-11/CSC584">CSC584 Repo</a>
+          <a href="https://github.com/LiuKang-11/Deadzone---DQN-AI-agent-for-2D-shooting-Game">Deadzone DQN Repo</a>
+          <a href="{{ '/assets/videos/Deadzone_complete_game.mp4' | relative_url }}">Deadzone Demo</a>
+          <a href="{{ '/assets/videos/HW2_Part4_Video.mp4' | relative_url }}">Flock Demo</a>
+          <a href="{{ '/assets/videos/HW3.mp4' | relative_url }}">Path Finding Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-## Project 3: CAE (CNN Autoencoder) Model for TSE (Twin Screw Extruder)
-### Description
-- Applied machine learning techniques to monitor and optimize the twin screw extruder process.
-- Developed a **Convolutional Autoencoder Model** to analyze and reconstruct screw elements effectively.
-- Utilized **Principal Component Analysis (PCA)** for visualizing encoded features of twin screw elements.
+  <div class="project-showcase">
+    <div class="media-frame">
+      <video controls>
+        <source src="{{ '/assets/videos/Deadzone_complete_game.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    <div class="media-frame">
+      <video controls>
+        <source src="{{ '/assets/videos/HW2_Part4_Video.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+    <div class="media-frame">
+      <video controls>
+        <source src="{{ '/assets/videos/HW3.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+  </div>
 
-Link:
-- [GitHub repo](https://github.com/LiuKang-11/CAE-model-for-twin-screw-process)
+  <blockquote>
+    The Game AI demos are now provided as H.264 <code>.mp4</code> files for better browser and mobile compatibility.
+  </blockquote>
+</section>
 
-### Model Architecture
-![CAE Architecture](https://user-images.githubusercontent.com/13636671/128841487-128e2580-7fa1-4dd5-9273-99b901ac9766.png)
+<section class="content-panel" data-aos="fade-up">
+  <span class="eyebrow">Project 5</span>
+  <h2>NASA Close Approach ML Analysis</h2>
 
-### Results
-> Visualizations include screw-image reconstruction, regression loss, and PCA-based clustering.
+  <div class="project-summary">
+    <div>
+      <p>
+        A Near-Earth Object analysis workflow combining NASA JPL data and close-approach API data to
+        study object characteristics, cluster patterns, and classification performance.
+      </p>
+      <ul>
+        <li>Merged CSV datasets with live NASA data, cleaned missing values, and normalized numerical features.</li>
+        <li>Performed EDA, K-Means clustering, KNN classification, and PCA visualization.</li>
+        <li>Used the project as a compact end-to-end ML analysis case study.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        Data cleaning, clustering, classification, and visual analysis
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://github.com/LiuKang-11/NASA-close-ML-Analysis">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-**Reconstruction**
-![Reconstruction](https://user-images.githubusercontent.com/13636671/128842031-ee18f944-3665-4954-9fe2-ae2f4d85b6d3.png)
-
-**Regression**
-![Regression 1](https://user-images.githubusercontent.com/13636671/128842140-2793a577-1fca-4d76-a85c-2b29ebab2c5d.png)
-
-![Regression 2](https://user-images.githubusercontent.com/13636671/128842154-ad8e8564-a1fd-4ac0-a6fb-ae18a48fd0bc.png)
-
-**PCA Analysis**
-![PCA](https://user-images.githubusercontent.com/13636671/128842304-a3f2ae84-4382-4345-a845-9340e007723b.png)
-
----
-
-## Project 4: Game AI Design
-### Description
-- Implement basic AI behavior in games (orientation, evade, etc.).
-- Implement path-finding algorithms **(Dijkstra and A\*)** for AI characters.
-- Develop multi-agent AI with **reinforcement learning (RL)**.
-
-Links:
-- [GitHub repo (CSC584)](https://github.com/LiuKang-11/CSC584)
-- [GitHub repo (Deadzone DQN)](https://github.com/LiuKang-11/Deadzone---DQN-AI-agent-for-2D-shooting-Game)
-
-### DeadZone Demo
-<video width="600" controls>
-  <source src="/assets/videos/Deadzone_complete_game.mov" type="video/mp4">
-  Your browser does not support video playback.
-</video>
-
-### Flock Demo
-<video width="600" controls>
-  <source src="/assets/videos/HW2_Part4 Video.mov" type="video/mp4">
-  Your browser does not support video playback.
-</video>
-
-### Path Finding Demo
-<video width="600" controls>
-  <source src="/assets/videos/HW3.mov" type="video/mp4">
-  Your browser does not support video playback.
-</video>
-
-> If your original files are `.mov`, consider converting to `.mp4` (H.264) for the best browser compatibility.
-
----
-
-## Project 5: NASA Close Approach ML Analysis
-### Description
-- **Objective:** Analyze Near-Earth Objects (NEOs) using NASA JPL data + real-time CAD API, and assess impact risks / trajectories.
-- **Methodology:**
-  - Merge CSV dataset with NASA JPL API data; clean duplicates/missing values; normalize numeric features.
-  - EDA on feature distributions (distance, velocity, absolute magnitude).
-  - **K-Means** clustering (2 clusters; choose via silhouette score).
-  - **KNN** classification with 99% accuracy on normalized features.
-  - **PCA** for dimensionality reduction and visualization.
-
-Link:
-- [GitHub repo](https://github.com/LiuKang-11/NASA-close-ML-Analysis)
-
-### Workflow
-![NASA Workflow](https://github.com/user-attachments/assets/a910af1e-c6da-4a15-8d6e-e2c723468bc8)
+  <div class="project-showcase">
+    <div class="media-frame">
+      <img src="https://github.com/user-attachments/assets/a910af1e-c6da-4a15-8d6e-e2c723468bc8" alt="NASA workflow">
+    </div>
+  </div>
+</section>
