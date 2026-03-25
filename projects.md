@@ -7,10 +7,7 @@ permalink: /projects/
 <section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">Projects</span>
   <h1>Selected projects across AI, ML systems, and interactive computing</h1>
-  <p>
-    This page turns the project list into a cleaner case-study style layout so it reads well on both
-    desktop and mobile while keeping demos, media, and links easy to scan.
-  </p>
+ 
 </section>
 
 <section class="content-panel" id="bigscore" data-aos="fade-up">

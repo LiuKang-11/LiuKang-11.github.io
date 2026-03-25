@@ -1,9 +1,4 @@
----
-layout: default
-title: "About"
----
-
-<section class="content-panel" data-aos="fade-up">
+I"<section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">About</span>
   <h1>Engineering depth with an applied AI and product mindset</h1>
   <p>
@@ -15,7 +10,7 @@ title: "About"
 
   <div class="project-summary">
     <div class="media-frame about-portrait-frame">
-      <img class="about-portrait" src="{{ '/assets/images/selfie3.png' | relative_url }}" alt="Leslie Liu portrait">
+      <img class="about-portrait" src="/assets/images/selfie3.png" alt="Leslie Liu portrait" />
     </div>
     <div class="meta-list">
       <div class="meta-item">
@@ -64,7 +59,7 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2024 - Now</span>
-        <img class="timeline-brand" src="{{ '/assets/images/ncstate-removebg-preview.png' | relative_url }}" alt="North Carolina State University logo">
+        <img class="timeline-brand" src="/assets/images/ncstate-removebg-preview.png" alt="North Carolina State University logo" />
       </div>
       <h3>North Carolina State University</h3>
       <p>Master of Computer Science with a stronger focus on software systems, AI applications, and product-oriented technical growth.</p>
@@ -73,7 +68,7 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2023 - 2024</span>
-        <img class="timeline-brand" src="{{ '/assets/images/ITRI_logo-removebg-preview.png' | relative_url }}" alt="ITRI logo">
+        <img class="timeline-brand" src="/assets/images/ITRI_logo-removebg-preview.png" alt="ITRI logo" />
       </div>
       <h3>ITRI · Machine Learning Engineer</h3>
       <p>Collaborated with academia and industry to accelerate materials research through machine learning workflows and application design.</p>
@@ -83,7 +78,7 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2021 - 2023</span>
-        <img class="timeline-brand" src="{{ '/assets/images/micron-removebg-preview.png' | relative_url }}" alt="Micron logo">
+        <img class="timeline-brand" src="/assets/images/micron-removebg-preview.png" alt="Micron logo" />
       </div>
       <h3>Micron · Process Engineer</h3>
       <p>Evaluated product process maturity and built automation plus machine-learning-assisted solutions to improve quality and defect detection.</p>
@@ -92,7 +87,7 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2019 - 2021</span>
-        <img class="timeline-brand" src="{{ '/assets/images/NTHU_Round_Seal.svg-removebg-preview.png' | relative_url }}" alt="NTHU logo">
+        <img class="timeline-brand" src="/assets/images/NTHU_Round_Seal.svg-removebg-preview.png" alt="NTHU logo" />
       </div>
       <h3>NTHU · Master of Chemical Engineering</h3>
       <p>Published research on process modeling with small data integration using deep convolutional autoencoder-based embedding methods.</p>
@@ -101,7 +96,7 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2018 - 2019</span>
-        <img class="timeline-brand" src="{{ '/assets/images/military-removebg-preview.png' | relative_url }}" alt="Military service icon">
+        <img class="timeline-brand" src="/assets/images/military-removebg-preview.png" alt="Military service icon" />
       </div>
       <h3>Military Service</h3>
       <p>Completed military service before returning to graduate study and technical work.</p>
@@ -110,10 +105,11 @@ title: "About"
     <article class="timeline-card">
       <div class="timeline-top">
         <span class="timeline-date">2014 - 2018</span>
-        <img class="timeline-brand" src="{{ '/assets/images/NTHU_Round_Seal.svg-removebg-preview.png' | relative_url }}" alt="NTHU logo">
+        <img class="timeline-brand" src="/assets/images/NTHU_Round_Seal.svg-removebg-preview.png" alt="NTHU logo" />
       </div>
       <h3>NTHU · Bachelor of Chemical Engineering</h3>
       <p>Built the analytical and engineering foundation that still shapes how I approach data, experiments, and technical problem solving.</p>
     </article>
   </div>
 </section>
+:ET
