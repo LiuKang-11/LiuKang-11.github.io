@@ -45,6 +45,10 @@ body {
     linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 52%, var(--bg) 100%);
 }
 
+body.lightbox-open {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -644,6 +648,62 @@ h3 {
   object-fit: cover;
 }
 
+.project-showcase .media-frame:has(.expandable-image) {
+  position: relative;
+}
+
+.expandable-image {
+  cursor: zoom-in;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.expandable-image:hover,
+.expandable-image:focus-visible {
+  transform: scale(1.01);
+  filter: brightness(0.98);
+}
+
+.project-showcase .media-frame:has(.expandable-image)::after {
+  content: "Click to expand";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(12, 24, 38, 0.76);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-showcase .media-frame:hover::after,
+.project-showcase .media-frame:focus-within::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-portrait-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 18px;
+}
+
+.about-portrait-frame .about-portrait {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 18px;
+}
+
 .media-frame video {
   aspect-ratio: 16 / 10;
   background: #000;
@@ -710,6 +770,54 @@ blockquote {
   background: rgba(234, 244, 255, 0.58);
   border-radius: 0 16px 16px 0;
   color: var(--muted);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.lightbox.is-open {
+  display: block;
+}
+
+.lightbox__backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  background: rgba(7, 15, 24, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.lightbox__image {
+  max-width: min(1200px, 92vw);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  background: #fff;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
 }
 
 @media (max-width: 980px) {
@@ -807,5 +915,14 @@ blockquote {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .lightbox__backdrop {
+    padding: 16px;
+  }
+
+  .lightbox__close {
+    top: 12px;
+    right: 12px;
   }
 }

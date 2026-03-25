@@ -201,9 +201,7 @@ permalink: /projects/
     </div>
   </div>
 
-  <blockquote>
-    The Game AI demos are now provided as H.264 <code>.mp4</code> files for better browser and mobile compatibility.
-  </blockquote>
+  
 </section>
 
 <section class="content-panel" data-aos="fade-up">
