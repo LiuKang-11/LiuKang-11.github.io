@@ -1,11 +1,12 @@
-I"<section class="content-panel" data-aos="fade-up">
+I"0<section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">About</span>
   <h1>Engineering depth with an applied AI and product mindset</h1>
   <p>
     I&apos;m Leslie Liu, currently pursuing a Master of Computer Science at North Carolina State University.
     My path has moved from chemical engineering into semiconductor process engineering, AI research,
-    and software-driven product building. That mix gives me a practical systems mindset: understand
-    the problem deeply, build the right workflow, and make the result usable for real people.
+    and software-driven product building. That mix gives me a practical machine learning systems
+    mindset: understand the problem deeply, build the right workflow, and make the result usable
+    for real people.
   </p>
 
   <div class="project-summary">
@@ -19,7 +20,11 @@
       </div>
       <div class="meta-item">
         <strong>Focus areas</strong>
-        Machine learning engineering, applied AI products, scientific computing, and practical software systems
+        Machine learning engineering, applied AI products, scientific computing, model experimentation, and practical software systems
+      </div>
+      <div class="meta-item">
+        <strong>Core tools</strong>
+        Python, PyTorch, scikit-learn, Pandas, NumPy, FastAPI, Git, and data-driven experimentation workflows
       </div>
       <div class="meta-item">
         <strong>Contact</strong>
@@ -38,14 +43,14 @@
       <h3>Research to execution</h3>
       <p>
         I enjoy turning analytical or research-heavy ideas into something testable,
-        visual, and usable by real users, teammates, or stakeholders.
+        measurable, and usable by real users, teammates, or stakeholders.
       </p>
     </article>
     <article class="mini-card">
       <h3>Systems thinking</h3>
       <p>
         My engineering background makes me comfortable with pipelines, quality improvement,
-        experimentation, and optimization under real operational constraints.
+        experimentation, optimization, and model-driven problem solving under real constraints.
       </p>
     </article>
   </div>
@@ -62,7 +67,7 @@
         <img class="timeline-brand" src="/assets/images/ncstate-removebg-preview.png" alt="North Carolina State University logo" />
       </div>
       <h3>North Carolina State University</h3>
-      <p>Master of Computer Science with a stronger focus on software systems, AI applications, and product-oriented technical growth.</p>
+      <p>Master of Computer Science with a stronger focus on software systems, machine learning applications, and product-oriented technical growth.</p>
     </article>
 
     <article class="timeline-card">
@@ -71,8 +76,8 @@
         <img class="timeline-brand" src="/assets/images/ITRI_logo-removebg-preview.png" alt="ITRI logo" />
       </div>
       <h3>ITRI · Machine Learning Engineer</h3>
-      <p>Collaborated with academia and industry to accelerate materials research through machine learning workflows and application design.</p>
-      <p>Worked on process optimization, user-facing interfaces, and translating technical solutions for chemical industry partners.</p>
+      <p>Collaborated with academia and industry to accelerate materials research through machine learning workflows, process optimization, and application design.</p>
+      <p>Worked on interface design and translating technical solutions into usable workflows for chemical industry partners.</p>
     </article>
 
     <article class="timeline-card">
@@ -81,7 +86,7 @@
         <img class="timeline-brand" src="/assets/images/micron-removebg-preview.png" alt="Micron logo" />
       </div>
       <h3>Micron · Process Engineer</h3>
-      <p>Evaluated product process maturity and built automation plus machine-learning-assisted solutions to improve quality and defect detection.</p>
+      <p>Evaluated product process maturity and built automation plus machine-learning-assisted solutions to improve quality, monitoring, and defect detection.</p>
     </article>
 
     <article class="timeline-card">

@@ -1,11 +1,11 @@
-I"©<section class="hero-panel">
+I"ñ<section class="hero-panel">
   <div data-aos="fade-up">
     <span class="eyebrow">Machine Learning Engineer â€¢ AI Product Builder</span>
     <h1 class="hero-title">Leslie Liu</h1>
     <p class="hero-subtitle">
-      I build applied AI products that connect machine learning, full-stack execution,
-      and clear user-facing experiences. My background blends scientific modeling,
-      process engineering, product thinking, and hands-on software delivery.
+      I build applied machine learning systems that connect modeling, data workflows,
+      and user-facing product experiences. My background blends scientific computing,
+      process engineering, experimentation, and hands-on software delivery.
     </p>
 
     <div class="hero-actions">
@@ -17,7 +17,7 @@
     <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
       <div class="stat-card">
         <strong>5+</strong>
-        <span>projects across ML systems, scientific modeling, and interactive AI experiences</span>
+        <span>projects across ML systems, scientific modeling, data analysis, and interactive AI experiences</span>
       </div>
       <div class="stat-card">
         <strong>3rd</strong>
@@ -25,7 +25,7 @@
       </div>
       <div class="stat-card">
         <strong>Research + Ship</strong>
-        <span>experience spanning AI research, semiconductor process engineering, and deployable software</span>
+        <span>experience spanning machine learning research, semiconductor process engineering, and deployable software systems</span>
       </div>
     </div>
   </div>
@@ -112,7 +112,7 @@
     </div>
     <p>
       My background started in chemical engineering and evolved through semiconductor process
-      engineering, AI research, and software-focused graduate study in computer science.
+      engineering, machine learning research, and software-focused graduate study in computer science.
     </p>
   </div>
 
@@ -120,22 +120,22 @@
     <article class="mini-card">
       <h3>What I bring</h3>
       <p>
-        I build systems that connect modeling, data pipelines, and user-facing delivery,
-        so research ideas can become tools people can actually use.
+        I build systems that connect data pipelines, model development, and user-facing delivery,
+        so research ideas can become usable internal tools or product features.
       </p>
     </article>
     <article class="mini-card">
       <h3>Current focus</h3>
       <p>
-        Machine learning engineering, applied AI product workflows, and interfaces that make
-        model output easier to understand, trust, and act on.
+        Machine learning engineering, data-driven experimentation, model evaluation,
+        and interfaces that make outputs easier to understand and trust.
       </p>
     </article>
     <article class="mini-card">
       <h3>Working style</h3>
       <p>
         Fast iteration, technical ownership, and a bias toward moving from experimentation
-        to demos, prototypes, and working software with measurable value.
+        to deployable demos, prototypes, and working software with measurable value.
       </p>
     </article>
   </div>
@@ -145,24 +145,32 @@
   <div class="section-header">
     <div>
       <span class="eyebrow">Skills</span>
-      <h2>Tools and areas I use most</h2>
+      <h2>Technical Skills</h2>
     </div>
-    <p>
-      A compact overview of the areas that show up repeatedly across my work.
-    </p>
+    
   </div>
 
-  <div class="pill-row">
-    <span class="pill">Python</span>
-    <span class="pill">Machine Learning</span>
-    <span class="pill">Data Science</span>
-    <span class="pill">LLM Apps</span>
-    <span class="pill">Data Analysis</span>
-    <span class="pill">MLOps Mindset</span>
-    <span class="pill">Product Prototyping</span>
-    <span class="pill">Scientific Computing</span>
-    <span class="pill">Automation</span>
-    <span class="pill">Frontend Integration</span>
+  <div class="skills-list">
+    <div class="skill-row">
+      <span class="skill-label">Languages</span>
+      <span class="skill-values">Python, SQL, JavaScript, HTML/CSS</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Machine Learning</span>
+      <span class="skill-values">PyTorch, scikit-learn, supervised learning, anomaly detection, reinforcement learning, Bayesian optimization</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Data &amp; Scientific Computing</span>
+      <span class="skill-values">Pandas, NumPy, data analysis, data visualization, scientific modeling, experimentation workflows</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Backend &amp; Product</span>
+      <span class="skill-values">FastAPI, API integration, automation, LLM apps, product prototyping</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Tools</span>
+      <span class="skill-values">Git, GitHub, Jupyter, model evaluation, workflow design</span>
+    </div>
   </div>
 </section>
 

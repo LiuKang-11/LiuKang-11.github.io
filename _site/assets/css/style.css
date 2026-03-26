@@ -550,6 +550,35 @@ h3 {
   font-weight: 600;
 }
 
+.skills-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  background: rgba(234, 244, 255, 0.48);
+  border: 1px solid rgba(111, 136, 163, 0.12);
+}
+
+.skill-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.skill-values {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
 .content-panel h1 {
   font-size: clamp(2.25rem, 4vw, 3.4rem);
   margin-bottom: 18px;
@@ -915,6 +944,12 @@ blockquote {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
   }
 
   .lightbox__backdrop {

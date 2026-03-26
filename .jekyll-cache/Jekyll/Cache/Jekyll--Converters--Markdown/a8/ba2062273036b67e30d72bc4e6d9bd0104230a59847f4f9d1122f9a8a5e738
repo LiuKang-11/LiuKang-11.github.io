@@ -1,11 +1,11 @@
-I"<section class="hero-panel">
+I"�<section class="hero-panel">
   <div data-aos="fade-up">
-    <span class="eyebrow">AI Engineer • Product Builder • Research Mindset</span>
+    <span class="eyebrow">Machine Learning Engineer • AI Product Builder</span>
     <h1 class="hero-title">Leslie Liu</h1>
     <p class="hero-subtitle">
-      I build intelligent products that connect machine learning, engineering execution,
-      and thoughtful user experience. My work sits between applied AI, data-driven product
-      design, and real-world problem solving.
+      I build applied machine learning systems that connect modeling, data workflows,
+      and user-facing product experiences. My background blends scientific computing,
+      process engineering, experimentation, and hands-on software delivery.
     </p>
 
     <div class="hero-actions">
@@ -17,15 +17,15 @@
     <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
       <div class="stat-card">
         <strong>5+</strong>
-        <span>portfolio projects across AI, ML systems, and interactive apps</span>
+        <span>projects across ML systems, scientific modeling, data analysis, and interactive AI experiences</span>
       </div>
       <div class="stat-card">
         <strong>3rd</strong>
-        <span>place at HackNCState with a production-oriented crypto scoring product</span>
+        <span>place at HackNCState with a production-ready crypto reliability scoring product</span>
       </div>
       <div class="stat-card">
-        <strong>AI + Eng</strong>
-        <span>a background spanning research, process engineering, and software delivery</span>
+        <strong>Research + Ship</strong>
+        <span>experience spanning machine learning research, semiconductor process engineering, and deployable software systems</span>
       </div>
     </div>
   </div>
@@ -55,13 +55,13 @@
       <span class="pill">Hackathon • Multi-agent AI</span>
       <h3>BigScore</h3>
       <p>
-        A crypto reliability scoring platform that aggregates multiple market and development
-        signals into a readable 0-100 score with explainable components.
+        A crypto reliability scoring platform that combines multi-source market, development,
+        and security signals into an explainable 0-100 trust score.
       </p>
       <div class="pill-row">
-        <span class="pill">LLM orchestration</span>
+        <span class="pill">Agentic workflow</span>
         <span class="pill">Scoring pipeline</span>
-        <span class="pill">Product thinking</span>
+        <span class="pill">API-backed UI</span>
       </div>
       <div class="project-links">
         <a href="/projects#bigscore">Read More</a>
@@ -72,13 +72,13 @@
       <span class="pill">Materials ML</span>
       <h3>Thermoplastic Elastomer Predictor</h3>
       <p>
-        Forward and inverse modeling for polymer behavior prediction, with Bayesian optimization
-        supporting performance-oriented material design.
+        Forward and inverse ML models for polymer stress-strain prediction, paired with
+        Bayesian optimization to guide performance-oriented material design.
       </p>
       <div class="pill-row">
-        <span class="pill">ML modeling</span>
-        <span class="pill">Optimization</span>
-        <span class="pill">Scientific workflow</span>
+        <span class="pill">Scientific ML</span>
+        <span class="pill">Bayesian optimization</span>
+        <span class="pill">Inverse design</span>
       </div>
       <div class="project-links">
         <a href="/projects#thermoplastic">Read More</a>
@@ -89,13 +89,13 @@
       <span class="pill">Interactive Systems</span>
       <h3>Game AI and ML Experiments</h3>
       <p>
-        A mix of path finding, reinforcement learning, and gameplay AI behaviors that show
-        algorithmic thinking in more visual, interactive settings.
+        Interactive AI experiments spanning path finding, reinforcement learning,
+        and gameplay behaviors in visually demonstrable environments.
       </p>
       <div class="pill-row">
         <span class="pill">A*</span>
         <span class="pill">Dijkstra</span>
-        <span class="pill">Reinforcement learning</span>
+        <span class="pill">RL agents</span>
       </div>
       <div class="project-links">
         <a href="/projects#game-ai">Read More</a>
@@ -111,8 +111,8 @@
       <h2>Bridging research, engineering, and product delivery</h2>
     </div>
     <p>
-      My background started in chemical engineering and moved through process engineering,
-      AI research, and software-focused graduate study.
+      My background started in chemical engineering and evolved through semiconductor process
+      engineering, machine learning research, and software-focused graduate study in computer science.
     </p>
   </div>
 
@@ -120,22 +120,22 @@
     <article class="mini-card">
       <h3>What I bring</h3>
       <p>
-        I like building products that are technically solid but still clear to users,
-        teammates, and stakeholders. That usually means connecting models, workflows, and UX.
+        I build systems that connect data pipelines, model development, and user-facing delivery,
+        so research ideas can become usable internal tools or product features.
       </p>
     </article>
     <article class="mini-card">
       <h3>Current focus</h3>
       <p>
-        Applied AI systems, product-oriented experimentation, and practical interfaces that
-        make complex data or model output easier to trust and use.
+        Machine learning engineering, data-driven experimentation, model evaluation,
+        and interfaces that make outputs easier to understand and trust.
       </p>
     </article>
     <article class="mini-card">
       <h3>Working style</h3>
       <p>
-        Fast iteration, strong ownership, and a bias toward turning research ideas into
-        demonstrations or working products with clear impact.
+        Fast iteration, technical ownership, and a bias toward moving from experimentation
+        to deployable demos, prototypes, and working software with measurable value.
       </p>
     </article>
   </div>
@@ -154,13 +154,20 @@
 
   <div class="pill-row">
     <span class="pill">Python</span>
+    <span class="pill">PyTorch</span>
+    <span class="pill">scikit-learn</span>
+    <span class="pill">Pandas</span>
+    <span class="pill">NumPy</span>
     <span class="pill">Machine Learning</span>
-    <span class="pill">LLM Apps</span>
     <span class="pill">Data Analysis</span>
+    <span class="pill">Data Visualization</span>
+    <span class="pill">Bayesian Optimization</span>
+    <span class="pill">LLM Apps</span>
+    <span class="pill">FastAPI</span>
     <span class="pill">Product Prototyping</span>
     <span class="pill">Scientific Computing</span>
     <span class="pill">Automation</span>
-    <span class="pill">Frontend Integration</span>
+    <span class="pill">Git</span>
   </div>
 </section>
 
