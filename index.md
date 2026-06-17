@@ -5,12 +5,11 @@ title: "Home"
 
 <section class="hero-panel">
   <div data-aos="fade-up">
-    <span class="eyebrow">Machine Learning Engineer • AI Product Builder</span>
+    <span class="eyebrow">Machine Learning Engineer • Applied AI Builder</span>
     <h1 class="hero-title">Leslie Liu</h1>
     <p class="hero-subtitle">
-      I build applied machine learning systems that connect modeling, data workflows,
-      and user-facing product experiences. My background blends scientific computing,
-      process engineering, experimentation, and hands-on software delivery.
+      I build applied AI systems across RAG, LLM agents, knowledge graphs,
+      ML pipelines, and full-stack product prototypes.
     </p>
 
     <div class="hero-actions">
@@ -21,16 +20,16 @@ title: "Home"
 
     <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
       <div class="stat-card">
-        <strong>5+</strong>
-        <span>projects across ML systems, scientific modeling, data analysis, and interactive AI experiences</span>
+        <strong>AI Systems</strong>
+        <span>RAG apps, knowledge graphs, model evaluation, and production-style inference workflows</span>
       </div>
       <div class="stat-card">
         <strong>3rd</strong>
         <span>place at HackNCState with a production-ready crypto reliability scoring product</span>
       </div>
       <div class="stat-card">
-        <strong>Research + Ship</strong>
-        <span>experience spanning machine learning research, semiconductor process engineering, and deployable software systems</span>
+        <strong>Cloud + Ship</strong>
+        <span>experience with GCP/AWS pipelines, APIs, CI/CD, and deployable AI prototypes</span>
       </div>
     </div>
   </div>
@@ -50,12 +49,30 @@ title: "Home"
       <h2>Projects with technical depth and clear product intent</h2>
     </div>
     <p>
-      A cleaner first look at the work that best represents my mix of machine learning,
-      systems thinking, and applied experimentation.
+      A compact look at the projects that best represent my applied AI and ML systems work.
     </p>
   </div>
 
   <div class="project-grid">
+    <article class="project-card">
+      <span class="pill">RAG • Knowledge Graphs</span>
+      <h3>Notipala</h3>
+      <p>
+        A full-stack AI research workspace that turns conversations and files into
+        evolving knowledge maps, grounded answers, and reusable research memory.
+      </p>
+      <div class="pill-row">
+        <span class="pill">LLM agents</span>
+        <span class="pill">Hybrid retrieval</span>
+        <span class="pill">React + Cloud Run</span>
+      </div>
+      <div class="project-links">
+        <a href="{{ '/projects' | relative_url }}#notipala">Read More</a>
+        <a href="https://notipala.pages.dev/">App</a>
+        <a href="https://www.youtube.com/watch?v=HDfLC3WSvJ8">Demo</a>
+      </div>
+    </article>
+
     <article class="project-card">
       <span class="pill">Hackathon • Multi-agent AI</span>
       <h3>BigScore</h3>
@@ -90,22 +107,6 @@ title: "Home"
       </div>
     </article>
 
-    <article class="project-card">
-      <span class="pill">Interactive Systems</span>
-      <h3>Game AI and ML Experiments</h3>
-      <p>
-        Interactive AI experiments spanning path finding, reinforcement learning,
-        and gameplay behaviors in visually demonstrable environments.
-      </p>
-      <div class="pill-row">
-        <span class="pill">A*</span>
-        <span class="pill">Dijkstra</span>
-        <span class="pill">RL agents</span>
-      </div>
-      <div class="project-links">
-        <a href="{{ '/projects' | relative_url }}#game-ai">Read More</a>
-      </div>
-    </article>
   </div>
 </section>
 
@@ -113,11 +114,10 @@ title: "Home"
   <div class="section-header">
     <div>
       <span class="eyebrow">About Snapshot</span>
-      <h2>Bridging research, engineering, and product delivery</h2>
+      <h2>Applied AI with engineering context</h2>
     </div>
     <p>
-      My background started in chemical engineering and evolved through semiconductor process
-      engineering, machine learning research, and software-focused graduate study in computer science.
+      I combine computer science graduate study with prior ML and process engineering experience.
     </p>
   </div>
 
@@ -125,22 +125,19 @@ title: "Home"
     <article class="mini-card">
       <h3>What I bring</h3>
       <p>
-        I build systems that connect data pipelines, model development, and user-facing delivery,
-        so research ideas can become usable internal tools or product features.
+        Full-stack AI prototypes, retrieval workflows, model pipelines, and evaluation loops.
       </p>
     </article>
     <article class="mini-card">
       <h3>Current focus</h3>
       <p>
-        Machine learning engineering, data-driven experimentation, model evaluation,
-        and interfaces that make outputs easier to understand and trust.
+        RAG/LLM agents, knowledge graphs, cloud ML systems, and practical AI product delivery.
       </p>
     </article>
     <article class="mini-card">
       <h3>Working style</h3>
       <p>
-        Fast iteration, technical ownership, and a bias toward moving from experimentation
-        to deployable demos, prototypes, and working software with measurable value.
+        Fast iteration, clear evaluation, and shipping working demos with measurable value.
       </p>
     </article>
   </div>
@@ -158,23 +155,23 @@ title: "Home"
   <div class="skills-list">
     <div class="skill-row">
       <span class="skill-label">Languages</span>
-      <span class="skill-values">Python, SQL, JavaScript, HTML/CSS</span>
+      <span class="skill-values">Python, C/C++, Java, SQL, R, Matlab, JavaScript/TypeScript</span>
     </div>
     <div class="skill-row">
       <span class="skill-label">Machine Learning</span>
-      <span class="skill-values">PyTorch, scikit-learn, supervised learning, anomaly detection, reinforcement learning, Bayesian optimization</span>
+      <span class="skill-values">PyTorch, TensorFlow, scikit-learn, RAG, LLM agents, knowledge graphs, vector/hybrid search, reranking, LLM evaluation, Bayesian optimization</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">MLOps & Systems</span>
+      <span class="skill-values">Docker, Airflow, GitHub Actions, DVC, CI/CD, experiment tracking, model serving, monitoring</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Cloud & Full-Stack</span>
+      <span class="skill-values">GCP, Cloud Run, BigQuery, Cloud Composer, AWS Lambda, S3, AWS CDK, React, FastAPI, MySQL, PostgreSQL, ChromaDB</span>
     </div>
     <div class="skill-row">
       <span class="skill-label">Data & Scientific Computing</span>
-      <span class="skill-values">Pandas, NumPy, data analysis, data visualization, scientific modeling, experimentation workflows</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-label">Backend & Product</span>
-      <span class="skill-values">FastAPI, API integration, automation, LLM apps, product prototyping</span>
-    </div>
-    <div class="skill-row">
-      <span class="skill-label">Tools</span>
-      <span class="skill-values">Git, GitHub, Jupyter, model evaluation, workflow design</span>
+      <span class="skill-values">Pandas, NumPy, data analysis, visualization, scientific modeling, experimentation workflows</span>
     </div>
   </div>
 </section>

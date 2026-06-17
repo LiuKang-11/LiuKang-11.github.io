@@ -1,12 +1,11 @@
-I"0<section class="content-panel" data-aos="fade-up">
+I"�<section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">About</span>
-  <h1>Engineering depth with an applied AI and product mindset</h1>
+  <h1>Applied AI engineer with ML systems and product focus</h1>
   <p>
     I&apos;m Leslie Liu, currently pursuing a Master of Computer Science at North Carolina State University.
-    My path has moved from chemical engineering into semiconductor process engineering, AI research,
-    and software-driven product building. That mix gives me a practical machine learning systems
-    mindset: understand the problem deeply, build the right workflow, and make the result usable
-    for real people.
+    I build practical AI systems across RAG, LLM agents, knowledge graphs, cloud pipelines,
+    and production-style ML workflows. My earlier chemical engineering and semiconductor work
+    still shapes how I approach data, experiments, quality, and deployment.
   </p>
 
   <div class="project-summary">
@@ -20,11 +19,11 @@
       </div>
       <div class="meta-item">
         <strong>Focus areas</strong>
-        Machine learning engineering, applied AI products, scientific computing, model experimentation, and practical software systems
+        Machine learning engineering, RAG/LLM agents, knowledge graphs, cloud ML systems, and applied AI products
       </div>
       <div class="meta-item">
         <strong>Core tools</strong>
-        Python, PyTorch, scikit-learn, Pandas, NumPy, FastAPI, Git, and data-driven experimentation workflows
+        Python, PyTorch, TensorFlow, scikit-learn, React, FastAPI, GCP, AWS, Docker, Airflow, and ChromaDB
       </div>
       <div class="meta-item">
         <strong>Contact</strong>
@@ -42,15 +41,13 @@
     <article class="mini-card">
       <h3>Research to execution</h3>
       <p>
-        I enjoy turning analytical or research-heavy ideas into something testable,
-        measurable, and usable by real users, teammates, or stakeholders.
+        I turn research-heavy ideas into testable workflows, usable products, and measurable model behavior.
       </p>
     </article>
     <article class="mini-card">
       <h3>Systems thinking</h3>
       <p>
-        My engineering background makes me comfortable with pipelines, quality improvement,
-        experimentation, optimization, and model-driven problem solving under real constraints.
+        I am comfortable connecting pipelines, evaluation, optimization, and user-facing software under real constraints.
       </p>
     </article>
   </div>
@@ -67,7 +64,7 @@
         <img class="timeline-brand" src="/assets/images/ncstate-removebg-preview.png" alt="North Carolina State University logo" />
       </div>
       <h3>North Carolina State University</h3>
-      <p>Master of Computer Science with a stronger focus on software systems, machine learning applications, and product-oriented technical growth.</p>
+      <p>Master of Computer Science focused on algorithms, machine learning, deep learning, software engineering, and database systems.</p>
     </article>
 
     <article class="timeline-card">
@@ -76,8 +73,7 @@
         <img class="timeline-brand" src="/assets/images/ITRI_logo-removebg-preview.png" alt="ITRI logo" />
       </div>
       <h3>ITRI · Machine Learning Engineer</h3>
-      <p>Collaborated with academia and industry to accelerate materials research through machine learning workflows, process optimization, and application design.</p>
-      <p>Worked on interface design and translating technical solutions into usable workflows for chemical industry partners.</p>
+      <p>Built reproducible ML and GCP-based ETL workflows for manufacturing optimization, model evaluation, and faster experiment iteration.</p>
     </article>
 
     <article class="timeline-card">
@@ -86,7 +82,7 @@
         <img class="timeline-brand" src="/assets/images/micron-removebg-preview.png" alt="Micron logo" />
       </div>
       <h3>Micron · Process Engineer</h3>
-      <p>Evaluated product process maturity and built automation plus machine-learning-assisted solutions to improve quality, monitoring, and defect detection.</p>
+      <p>Built monitoring, anomaly detection, defect classification, and root-cause analysis workflows for semiconductor process improvement.</p>
     </article>
 
     <article class="timeline-card">

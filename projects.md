@@ -6,12 +6,59 @@ permalink: /projects/
 
 <section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">Projects</span>
-  <h1>Selected projects across AI, ML systems, and interactive computing</h1>
+  <h1>Selected projects across applied AI, ML systems, and interactive computing</h1>
  
 </section>
 
-<section class="content-panel" id="bigscore" data-aos="fade-up">
+<section class="content-panel" id="notipala" data-aos="fade-up">
   <span class="eyebrow">Project 1</span>
+  <h2>Notipala: Knowledge-Graph RAG System for Research Workflows</h2>
+
+  <div class="project-summary">
+    <div>
+      <p>
+        A full-stack AI research workspace that converts conversations, PDFs, documents,
+        and slides into evolving knowledge maps, evidence-linked reports, and reusable
+        research knowledge bases.
+      </p>
+      <ul>
+        <li>Built LLM pipelines for entity and relation extraction, semantic deduplication, section clustering, and incremental graph updates.</li>
+        <li>Implemented source-grounded RAG with evidence lists, hybrid retrieval, reranking, section notes, and cross-section bridge notes.</li>
+        <li>Separated immediate LLM answers from asynchronous graph and report construction to keep the product responsive.</li>
+      </ul>
+    </div>
+    <div class="meta-list">
+      <div class="meta-item">
+        <strong>Focus</strong>
+        LLM apps, RAG, knowledge graphs, research workflows, and cloud deployment
+      </div>
+      <div class="meta-item">
+        <strong>Stack</strong>
+        LLMs, RAG, knowledge graphs, React, Cloud Run
+      </div>
+      <div class="meta-item">
+        <strong>Links</strong>
+        <div class="project-links">
+          <a href="https://notipala.pages.dev/">App</a>
+          <a href="https://www.youtube.com/watch?v=HDfLC3WSvJ8">Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-showcase">
+    <div class="media-frame">
+      <iframe
+        src="https://www.youtube.com/embed/HDfLC3WSvJ8"
+        title="Notipala Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="content-panel" id="bigscore" data-aos="fade-up">
+  <span class="eyebrow">Project 2</span>
   <h2>Crypto Reliability Tracker (BigScore)</h2>
 
   <div class="project-summary">
@@ -56,7 +103,7 @@ permalink: /projects/
 </section>
 
 <section class="content-panel" id="thermoplastic" data-aos="fade-up">
-  <span class="eyebrow">Project 2</span>
+  <span class="eyebrow">Project 3</span>
   <h2>Thermoplastic Elastomer ML Predictor</h2>
 
   <div class="project-summary">
@@ -80,8 +127,8 @@ permalink: /projects/
         <strong>Links</strong>
         <div class="project-links">
           <a href="https://github.com/LiuKang-11/Thermoplastic-Elastomer-inverse-design">GitHub</a>
-          <a href="{{ '/assets/videos/thermo1.mp4' | relative_url }}">Forward Demo Video</a>
-          <a href="{{ '/assets/videos/thermo2.mp4' | relative_url }}">Inverse Demo Video</a>
+          <a href="{{ '/assets/videos/thermo1_web.mp4' | relative_url }}">Forward Demo Video</a>
+          <a href="{{ '/assets/videos/thermo2_web.mp4' | relative_url }}">Inverse Demo Video</a>
         </div>
       </div>
     </div>
@@ -90,13 +137,13 @@ permalink: /projects/
   <div class="project-showcase">
     <div class="media-frame">
       <video controls>
-        <source src="{{ '/assets/videos/thermo1.mp4' | relative_url }}" type="video/mp4">
+        <source src="{{ '/assets/videos/thermo1_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
     <div class="media-frame">
       <video controls>
-        <source src="{{ '/assets/videos/thermo2.mp4' | relative_url }}" type="video/mp4">
+        <source src="{{ '/assets/videos/thermo2_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
@@ -104,7 +151,7 @@ permalink: /projects/
 </section>
 
 <section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Project 3</span>
+  <span class="eyebrow">Project 4</span>
   <h2>CAE Model for Twin Screw Extruder Analysis</h2>
 
   <div class="project-summary">
@@ -144,7 +191,7 @@ permalink: /projects/
 </section>
 
 <section class="content-panel" id="game-ai" data-aos="fade-up">
-  <span class="eyebrow">Project 4</span>
+  <span class="eyebrow">Project 5</span>
   <h2>Game AI Design</h2>
 
   <div class="project-summary">
@@ -171,7 +218,7 @@ permalink: /projects/
           <a href="https://github.com/LiuKang-11/Deadzone---DQN-AI-agent-for-2D-shooting-Game">Deadzone DQN Repo</a>
           <a href="{{ '/assets/videos/Deadzone_complete_game.mp4' | relative_url }}">Deadzone Demo</a>
           <a href="{{ '/assets/videos/HW2_Part4_Video.mp4' | relative_url }}">Flock Demo</a>
-          <a href="{{ '/assets/videos/HW3.mp4' | relative_url }}">Path Finding Demo</a>
+          <a href="{{ '/assets/videos/HW3_web.mp4' | relative_url }}">Path Finding Demo</a>
         </div>
       </div>
     </div>
@@ -192,7 +239,7 @@ permalink: /projects/
     </div>
     <div class="media-frame">
       <video controls>
-        <source src="{{ '/assets/videos/HW3.mp4' | relative_url }}" type="video/mp4">
+        <source src="{{ '/assets/videos/HW3_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
@@ -202,7 +249,7 @@ permalink: /projects/
 </section>
 
 <section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Project 5</span>
+  <span class="eyebrow">Project 6</span>
   <h2>NASA Close Approach ML Analysis</h2>
 
   <div class="project-summary">
