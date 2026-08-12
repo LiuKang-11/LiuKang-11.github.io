@@ -46,11 +46,8 @@ title: "Home"
   <div class="section-header">
     <div>
       <span class="eyebrow">Selected Work</span>
-      <h2>Projects with technical depth and clear product intent</h2>
+      <h2>selected project</h2>
     </div>
-    <p>
-      A compact look at the projects that best represent my applied AI and ML systems work.
-    </p>
   </div>
 
   <div class="project-grid">
@@ -113,39 +110,6 @@ title: "Home"
 <section class="section-panel" data-aos="fade-up">
   <div class="section-header">
     <div>
-      <span class="eyebrow">About Snapshot</span>
-      <h2>Applied AI with engineering context</h2>
-    </div>
-    <p>
-      I combine computer science graduate study with prior ML and process engineering experience.
-    </p>
-  </div>
-
-  <div class="feature-grid">
-    <article class="mini-card">
-      <h3>What I bring</h3>
-      <p>
-        Full-stack AI prototypes, retrieval workflows, model pipelines, and evaluation loops.
-      </p>
-    </article>
-    <article class="mini-card">
-      <h3>Current focus</h3>
-      <p>
-        RAG/LLM agents, knowledge graphs, cloud ML systems, and practical AI product delivery.
-      </p>
-    </article>
-    <article class="mini-card">
-      <h3>Working style</h3>
-      <p>
-        Fast iteration, clear evaluation, and shipping working demos with measurable value.
-      </p>
-    </article>
-  </div>
-</section>
-
-<section class="section-panel" data-aos="fade-up">
-  <div class="section-header">
-    <div>
       <span class="eyebrow">Skills</span>
       <h2>Technical Skills</h2>
     </div>
@@ -178,14 +142,7 @@ title: "Home"
 
 <section class="section-panel" data-aos="fade-up">
   <div class="section-header">
-    <div>
-      <span class="eyebrow">Contact</span>
-      <h2>Let&apos;s build something useful and thoughtful</h2>
-    </div>
-    <p>
-      If you want to talk about AI products, engineering, or collaboration opportunities,
-      I&apos;m always happy to connect.
-    </p>
+    <span class="eyebrow">Contact</span>
   </div>
 
   <div class="contact-grid">

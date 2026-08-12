@@ -5,12 +5,11 @@ title: "About"
 
 <section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">About</span>
-  <h1>Applied AI engineer with ML systems and product focus</h1>
   <p>
-    I&apos;m Leslie Liu, currently pursuing a Master of Computer Science at North Carolina State University.
-    I build practical AI systems across RAG, LLM agents, knowledge graphs, cloud pipelines,
-    and production-style ML workflows. My earlier chemical engineering and semiconductor work
-    still shapes how I approach data, experiments, quality, and deployment.
+    Software Engineer with an M.S. in Computer Science and experience building AI/ML systems,
+    backend APIs, cloud data pipelines, and user-facing applications. Skilled in Python, C++,
+    TypeScript/JavaScript, GCP/AWS, hybrid retrieval, and end-to-end ownership from data ingestion
+    through deployment.
   </p>
 
   <div class="project-summary">
@@ -41,21 +40,6 @@ title: "About"
     </div>
   </div>
 
-  <h2>How I like to work</h2>
-  <div class="highlights-grid">
-    <article class="mini-card">
-      <h3>Research to execution</h3>
-      <p>
-        I turn research-heavy ideas into testable workflows, usable products, and measurable model behavior.
-      </p>
-    </article>
-    <article class="mini-card">
-      <h3>Systems thinking</h3>
-      <p>
-        I am comfortable connecting pipelines, evaluation, optimization, and user-facing software under real constraints.
-      </p>
-    </article>
-  </div>
 </section>
 
 <section class="content-panel" data-aos="fade-up">

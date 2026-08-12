@@ -6,7 +6,7 @@ permalink: /projects/
 
 <section class="content-panel" data-aos="fade-up">
   <span class="eyebrow">Projects</span>
-  <h1>Selected projects across applied AI, ML systems, and interactive computing</h1>
+  <h1>Selected Projects</h1>
  
 </section>
 
