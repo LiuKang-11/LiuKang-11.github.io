@@ -4,8 +4,8 @@ title: "Home"
 ---
 
 <section class="hero-panel">
-  <div data-aos="fade-up">
-    <span class="eyebrow">Machine Learning Engineer • Applied AI Builder</span>
+  <div class="hero-copy reveal">
+    <p class="hero-role">Machine Learning Engineer • Applied AI Builder</p>
     <h1 class="hero-title">Leslie Liu</h1>
     <p class="hero-subtitle">
       I build applied AI systems across RAG, LLM agents, knowledge graphs,
@@ -18,7 +18,19 @@ title: "Home"
       <a class="button-secondary" href="mailto:s9172051212@gmail.com">Contact</a>
     </div>
 
-    <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+
+  </div>
+
+  <div class="hero-visual reveal">
+    <div class="portrait-card">
+      <div class="portrait-color portrait-color--blue" aria-hidden="true"></div>
+      <div class="portrait-color portrait-color--red" aria-hidden="true"></div>
+      <div class="portrait-color portrait-color--yellow" aria-hidden="true"></div>
+      <span class="portrait-badge">Open to building practical AI products</span>
+      <img src="{{ '/assets/images/selfie3.png' | relative_url }}" alt="Portrait of Leslie Liu" width="534" height="762" fetchpriority="high">
+    </div>
+  </div>
+    <div class="stats-grid">
       <div class="stat-card">
         <strong>AI Systems</strong>
         <span>RAG apps, knowledge graphs, model evaluation, and production-style inference workflows</span>
@@ -32,20 +44,12 @@ title: "Home"
         <span>experience with GCP/AWS pipelines, APIs, CI/CD, and deployable AI prototypes</span>
       </div>
     </div>
-  </div>
-
-  <div class="hero-visual" data-aos="fade-left">
-    <div class="portrait-card">
-      <span class="portrait-badge">Open to building practical AI products</span>
-      <img src="{{ '/assets/images/selfie3.png' | relative_url }}" alt="Portrait of Leslie Liu">
-    </div>
-  </div>
 </section>
 
-<section class="section-panel" data-aos="fade-up">
+<section class="section-panel reveal">
   <div class="section-header">
     <div>
-      <span class="eyebrow">Selected Work</span>
+      <span class="section-label">Selected Work</span>
       <h2>selected project</h2>
     </div>
   </div>
@@ -107,10 +111,10 @@ title: "Home"
   </div>
 </section>
 
-<section class="section-panel" data-aos="fade-up">
+<section class="section-panel skills-panel reveal">
   <div class="section-header">
     <div>
-      <span class="eyebrow">Skills</span>
+      <span class="section-label">Skills</span>
       <h2>Technical Skills</h2>
     </div>
     
@@ -140,9 +144,9 @@ title: "Home"
   </div>
 </section>
 
-<section class="section-panel" data-aos="fade-up">
+<section class="section-panel contact-panel reveal" id="contact">
   <div class="section-header">
-    <span class="eyebrow">Contact</span>
+    <h2>Contact</h2>
   </div>
 
   <div class="contact-grid">

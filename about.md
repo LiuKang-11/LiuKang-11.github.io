@@ -3,8 +3,8 @@ layout: default
 title: "About"
 ---
 
-<section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">About</span>
+<section class="content-panel about-intro reveal">
+  <h1 class="page-title">About</h1>
   <p>
     Software Engineer with an M.S. in Computer Science and experience building AI/ML systems,
     backend APIs, cloud data pipelines, and user-facing applications. Skilled in Python, C++,
@@ -14,7 +14,7 @@ title: "About"
 
   <div class="project-summary">
     <div class="media-frame about-portrait-frame">
-      <img class="about-portrait" src="{{ '/assets/images/selfie3.png' | relative_url }}" alt="Leslie Liu portrait">
+      <img class="about-portrait" src="{{ '/assets/images/selfie3.png' | relative_url }}" alt="Leslie Liu portrait" width="534" height="762">
     </div>
     <div class="meta-list">
       <div class="meta-item">
@@ -42,14 +42,24 @@ title: "About"
 
 </section>
 
-<section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Timeline</span>
+<section class="content-panel reveal">
+  <span class="section-label">Timeline</span>
   <h2>Education and work experience</h2>
+
+  <article class="timeline-card timeline-card--founder">
+    <div class="timeline-top">
+      <span class="timeline-date">2026 - Now</span>
+      <img class="timeline-brand timeline-brand--notipala" src="{{ '/assets/images/Notipala-transparent.png' | relative_url }}" alt="Notipala logo" width="1254" height="1254" loading="lazy">
+    </div>
+    <h3>Notipala · Founder</h3>
+    <p>Built and deployed Notipala, an AI memory and research assistant combining hybrid retrieval, knowledge graphs, and tool execution. Designed its AI/backend architecture, memory pipelines, authentication, and cloud deployment using FastAPI, React, GCP, and Cloudflare.</p>
+    <a class="founder-product" href="https://notipala.com">notipala.com</a>
+  </article>
 
   <div class="timeline">
     <article class="timeline-card">
       <div class="timeline-top">
-        <span class="timeline-date">2024 - Now</span>
+        <span class="timeline-date">2024 - 2026</span>
         <img class="timeline-brand" src="{{ '/assets/images/ncstate-removebg-preview.png' | relative_url }}" alt="North Carolina State University logo">
       </div>
       <h3>North Carolina State University</h3>

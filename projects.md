@@ -4,14 +4,14 @@ title: "Projects"
 permalink: /projects/
 ---
 
-<section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Projects</span>
+<section class="content-panel project-page-title reveal">
+  <span class="section-label">Projects</span>
   <h1>Selected Projects</h1>
  
 </section>
 
-<section class="content-panel" id="notipala" data-aos="fade-up">
-  <span class="eyebrow">Project 1</span>
+<section class="content-panel project-detail reveal" id="notipala">
+  <span class="section-label">Project 1</span>
   <h2>Notipala: Knowledge-Graph RAG System for Research Workflows</h2>
 
   <div class="project-summary">
@@ -41,6 +41,7 @@ permalink: /projects/
         <div class="project-links">
           <a href="https://notipala.pages.dev/">App</a>
           <a href="https://www.youtube.com/watch?v=HDfLC3WSvJ8">Demo</a>
+          <a href="https://www.youtube.com/watch?v=-IK0vBAx69s">ERP + Email Demo</a>
         </div>
       </div>
     </div>
@@ -49,16 +50,25 @@ permalink: /projects/
   <div class="project-showcase">
     <div class="media-frame">
       <iframe
+        loading="lazy"
         src="https://www.youtube.com/embed/HDfLC3WSvJ8"
         title="Notipala Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div class="media-frame">
+      <iframe
+        loading="lazy"
+        src="https://www.youtube.com/embed/-IK0vBAx69s"
+        title="Notipala Demo: Investigating with ERP + Email"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
   </div>
 </section>
 
-<section class="content-panel" id="bigscore" data-aos="fade-up">
-  <span class="eyebrow">Project 2</span>
+<section class="content-panel project-detail reveal" id="bigscore">
+  <span class="section-label">Project 2</span>
   <h2>Crypto Reliability Tracker (BigScore)</h2>
 
   <div class="project-summary">
@@ -90,10 +100,11 @@ permalink: /projects/
 
   <div class="project-showcase">
     <div class="media-frame">
-      <img src="{{ '/assets/images/nchack_workflow.jpg' | relative_url }}" alt="BigScore workflow">
+      <img loading="lazy" src="{{ '/assets/images/nchack_workflow.jpg' | relative_url }}" alt="BigScore workflow">
     </div>
     <div class="media-frame">
       <iframe
+        loading="lazy"
         src="https://www.youtube.com/embed/5htZazPobtw"
         title="BigScore App Demo"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -102,8 +113,8 @@ permalink: /projects/
   </div>
 </section>
 
-<section class="content-panel" id="thermoplastic" data-aos="fade-up">
-  <span class="eyebrow">Project 3</span>
+<section class="content-panel project-detail reveal" id="thermoplastic">
+  <span class="section-label">Project 3</span>
   <h2>Thermoplastic Elastomer ML Predictor</h2>
 
   <div class="project-summary">
@@ -136,13 +147,13 @@ permalink: /projects/
 
   <div class="project-showcase">
     <div class="media-frame">
-      <video controls>
+      <video controls preload="metadata">
         <source src="{{ '/assets/videos/thermo1_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
     <div class="media-frame">
-      <video controls>
+      <video controls preload="metadata">
         <source src="{{ '/assets/videos/thermo2_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
@@ -150,8 +161,8 @@ permalink: /projects/
   </div>
 </section>
 
-<section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Project 4</span>
+<section class="content-panel project-detail reveal">
+  <span class="section-label">Project 4</span>
   <h2>CAE Model for Twin Screw Extruder Analysis</h2>
 
   <div class="project-summary">
@@ -182,16 +193,16 @@ permalink: /projects/
 
   <div class="project-showcase">
     <div class="media-frame">
-      <img src="https://user-images.githubusercontent.com/13636671/128841487-128e2580-7fa1-4dd5-9273-99b901ac9766.png" alt="CAE architecture">
+      <img loading="lazy" src="https://user-images.githubusercontent.com/13636671/128841487-128e2580-7fa1-4dd5-9273-99b901ac9766.png" alt="CAE architecture">
     </div>
     <div class="media-frame">
-      <img src="https://user-images.githubusercontent.com/13636671/128842304-a3f2ae84-4382-4345-a845-9340e007723b.png" alt="PCA analysis">
+      <img loading="lazy" src="https://user-images.githubusercontent.com/13636671/128842304-a3f2ae84-4382-4345-a845-9340e007723b.png" alt="PCA analysis">
     </div>
   </div>
 </section>
 
-<section class="content-panel" id="game-ai" data-aos="fade-up">
-  <span class="eyebrow">Project 5</span>
+<section class="content-panel project-detail reveal" id="game-ai">
+  <span class="section-label">Project 5</span>
   <h2>Game AI Design</h2>
 
   <div class="project-summary">
@@ -226,19 +237,19 @@ permalink: /projects/
 
   <div class="project-showcase">
     <div class="media-frame">
-      <video controls>
+      <video controls preload="metadata">
         <source src="{{ '/assets/videos/Deadzone_complete_game.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
     <div class="media-frame">
-      <video controls>
+      <video controls preload="metadata">
         <source src="{{ '/assets/videos/HW2_Part4_Video.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
     </div>
     <div class="media-frame">
-      <video controls>
+      <video controls preload="metadata">
         <source src="{{ '/assets/videos/HW3_web.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support video playback.
       </video>
@@ -248,8 +259,8 @@ permalink: /projects/
   
 </section>
 
-<section class="content-panel" data-aos="fade-up">
-  <span class="eyebrow">Project 6</span>
+<section class="content-panel project-detail reveal">
+  <span class="section-label">Project 6</span>
   <h2>NASA Close Approach ML Analysis</h2>
 
   <div class="project-summary">
@@ -280,7 +291,7 @@ permalink: /projects/
 
   <div class="project-showcase">
     <div class="media-frame">
-      <img src="https://github.com/user-attachments/assets/a910af1e-c6da-4a15-8d6e-e2c723468bc8" alt="NASA workflow">
+      <img loading="lazy" src="https://github.com/user-attachments/assets/a910af1e-c6da-4a15-8d6e-e2c723468bc8" alt="NASA workflow">
     </div>
   </div>
 </section>
